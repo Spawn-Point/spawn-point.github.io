@@ -1,0 +1,34 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+}
+
+.logo img {
+  width: 64px;
+}
+.logo:hover {
+  filter: drop-shadow(5px 5px 1.5em #646cffaa);
+}
+.social-media img {
+  width: 42px;
+  padding: 8px;
+}
+.social-media img:hover {
+  box-shadow: 0 1px 38px rgba(255, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.25),
+    0 0 20px #646cffaa, 0 0 40px #646cffaa;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */

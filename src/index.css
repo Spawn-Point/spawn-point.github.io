@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.homePage {
+  background-color: #000;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding: 0 15px;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: #000;
+}
+.nav-content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav-content li {
+  padding: 0 40px;
+}
+.nav-content a {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.nav-content a:hover {
+  color: #646cffaa;
+}
+.social-media ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.hero img {
+  width: 100%;
+  height: 336px;
+  padding: 0;
+}
+
+.contactsPage {
+  background: url(/public/images/background-unsplash.jpg) no-repeat center
+    center/cover;
+  color: #333;
+  width: 100%;
+  padding: 110px;
+  margin-bottom: 64px;
+}
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  text-align: center;
+  margin-top: 32px;
+}
+.contact-img img {
+  width: 443px;
+  height: 431px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.contact-img img:hover {
+  filter: drop-shadow(5px 5px 1.5em #646cffaa);
+}
+.contact-info h3 {
+  padding-bottom: 16px;
+}
+
+.aboutPage {
+  padding: 100px 200px 40px 80px;
+  width: 100%;
+  background: url(/public/images/background-unsplash.jpg) no-repeat center
+    center/cover;
+  color: #000;
+  line-height: 26px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.aboutPage h3 {
+  padding: 12px 0;
+}
+.aboutPage ul {
+  margin-left: 20px;
+}
+.pressPage {
+  padding-top: 110px;
+}
+.pressPage img {
+  width: 400px;
+  margin: 32px;
+}
+.pressPage img:hover {
+  opacity: 0.8;
+}
+.hs-banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-top {
+  width: 788px;
+  height: 430px;
+  position: absolute;
+}
+
+.footerPage {
+  color: #333;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.footerPage h2 {
+  font-size: 42px;
+}
