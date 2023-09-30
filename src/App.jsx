@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import Press from './Pages/Press';
 import CurrentProject from './Pages/CurrentProject';
 import HSPressKit from './Pages/HSPressKit';
+import Projects from './Pages/Projects';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/press" element={<Press />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/currentProject" element={<CurrentProject />} />
         <Route path="/hooking-season-press-kit" element={<HSPressKit />} />
       </Routes>

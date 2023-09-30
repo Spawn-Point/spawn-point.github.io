@@ -19,11 +19,11 @@ a {
 .navbar {
   display: flex;
   position: fixed;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 64px;
-  padding: 0 15px;
+  padding: 0 32px;
   top: 0;
   left: 0;
   z-index: 50;
@@ -36,22 +36,24 @@ a {
   list-style: none;
 }
 .nav-content li {
-  padding: 0 40px;
-}
-.nav-content a {
-  will-change: filter;
-  transition: filter 300ms;
+  padding: 0 20px;
 }
 .nav-content a:hover {
   color: #646cffaa;
 }
-.social-media ul {
+
+.social ul {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
-
+.social a {
+  padding: 0 6px;
+}
+.social a:hover {
+  color: #646cffaa;
+}
 .hero img {
   width: 100%;
   height: 336px;
@@ -85,24 +87,47 @@ a {
 .contact-info h3 {
   padding-bottom: 16px;
 }
+.projectsPage {
+  padding: 110px;
+  color: #333;
+}
 
 .aboutPage {
   padding: 100px 200px 40px 80px;
+  position: relative;
   width: 100%;
-  background: url(/public/images/background-unsplash.jpg) no-repeat center
-    center/cover;
-  color: #000;
-  line-height: 26px;
-  text-align: justify;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 40px;
+  color: #333;
+  line-height: 26px;
+  text-align: justify;
 }
+.aboutPage::before {
+  content: '';
+  background: url(/public/images/background-unsplash.jpg) no-repeat center
+    center/cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.86;
+}
+
 .aboutPage h3 {
-  padding: 12px 0;
+  padding: 6px 0;
+  position: relative;
+}
+.aboutPage p {
+  padding: 6px 0;
+  position: relative;
 }
 .aboutPage ul {
   margin-left: 20px;
+  position: relative;
 }
 .pressPage {
   padding-top: 110px;
@@ -128,11 +153,15 @@ a {
   height: 430px;
   position: absolute;
 }
+.projects-img {
+  width: 270px;
+}
 
 .footerPage {
-  color: #333;
+  background-color: #000;
+  color: #fff;
   text-align: center;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 .footerPage h2 {
   font-size: 42px;

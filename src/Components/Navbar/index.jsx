@@ -28,41 +28,6 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="social-media">
-          <ul>
-            <li>
-              <Link
-                to="https://www.youtube.com/channel/UCUVlPhTLG6046c23rjF3J7A"
-                target="_blank"
-              >
-                <img src="/images/youtube.png" alt="youtube" />
-              </Link>
-            </li>
-            <li>
-              <Link to="https://twitter.com/SpawnPoint9000" target="_blank">
-                <img src="/images/twitter.png" alt="twitter" />
-              </Link>
-            </li>
-            <li>
-              <Link to="https://discord.com/invite/HkxsurrRSb" target="_blank">
-                <img src="/images/discord.png" alt="discord" />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="https://www.instagram.com/spawnpoint9000/"
-                target="_blank"
-              >
-                <img src="/images/insta.png" alt="instagram" />
-              </Link>
-            </li>
-            <li>
-              <Link to="https://spawnpoint.itch.io/" target="_blank">
-                <img src="/images/itch.png" alt="itch" />
-              </Link>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   );
