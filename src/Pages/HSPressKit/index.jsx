@@ -62,12 +62,31 @@ function HSPressKit() {
           </ul>
         </div>
       </div>
-      <div>
+      <div className="press-content">
         <h2>Videos</h2>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/watch?v=RnYhVbsJ9Uc&ab_channel=SpawnPoint"
+        ></iframe>
+        <br />
+
         <h2>Screenshots</h2>
         <div className="screenshots">
-          <img src="/images/store_capsule_main_transparent.png" alt="" />
+          <img src="/images/screenshots/Screenshot_1.png" alt="" />
+          <img src="/images/screenshots/Screenshot_2.png" alt="" />
+          <img src="/images/screenshots/Screenshot_3.png" alt="" />
+          <img src="/images/screenshots/Screenshot_4.png" alt="" />
+          <img src="/images/screenshots/Screenshot_5.png" alt="" />
+          <img src="/images/screenshots/Screenshot_6.png" alt="" />
+          <img src="/images/screenshots/Screenshot_7.png" alt="" />
+          <img src="/images/screenshots/Screenshot_8.png" alt="" />
+          <img src="/images/screenshots/Screenshot_9.png" alt="" />
+          <img src="/images/screenshots/Screenshot_10.png" alt="" />
+          <img src="/images/screenshots/Screenshot_11.png" alt="" />
         </div>
+        <br />
+
         <h2>Logo & Extras</h2>
         <div className="extras-img">
           <img src="/images/store_capsule_main_transparent.png" alt="" />

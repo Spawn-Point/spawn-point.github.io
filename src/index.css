@@ -12,16 +12,29 @@ a {
   color: #fff;
   text-decoration: none;
 }
+@font-face {
+  font-family: 'halloweenFont';
+  src: url(/public/font-types/EspenHalloweenRegular.ttf);
+}
+@font-face {
+  font-family: 'reboopFont';
+  src: url(/public/font-types/DigitalDream.ttf);
+}
+@font-face {
+  font-family: 'hookingFont';
+  src: url(/public/font-types/PublicPixel.ttf);
+}
 
 /* Home Page */
 .homePage {
   background-color: #000;
 }
 .hero {
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
-  position: relative;
+  padding-top: 64px;
 }
+
 .latest-project {
   background: url(/images/library_hero_background.png) no-repeat center
     center/cover;
@@ -71,7 +84,7 @@ a {
 .contactsPage {
   background: url(/public/images/background-unsplash.jpg) no-repeat center
     center/cover;
-  color: #333;
+  color: rgb(36, 35, 35);
   padding: 90px 170px 0 170px;
 }
 .contacts {
@@ -99,7 +112,7 @@ a {
   padding: 76px 0 20px 0;
   background: url(/public/images/background-unsplash.jpg) no-repeat center
     center/cover;
-  color: #333;
+  color: rgb(36, 35, 35);
 }
 .projects-img {
   width: 270px;
@@ -130,7 +143,7 @@ a {
   justify-content: center;
   flex-direction: column;
   gap: 40px;
-  color: #333;
+  color: rgb(36, 35, 35);
   line-height: 26px;
   text-align: justify;
 }
@@ -178,10 +191,7 @@ a {
   position: relative;
 }
 .reboopPage h1 {
-  @font-face {
-    font-family: ;
-    src: url(DigitalDream.ttf);
-  }
+  font-family: reboopFont;
 }
 
 /* Jack O'Manor Page */
@@ -189,6 +199,51 @@ a {
   background: url(/public/images/jack-background.jpg) no-repeat center
     center/cover;
   background-attachment: fixed;
+  color: #fff;
+  font-family: halloweenFont;
+}
+.jack-intro {
+  padding: 200px 0 100px 0;
+  letter-spacing: 0.01em;
+}
+.jack-intro h1 {
+  letter-spacing: 0.01em;
+  font-size: 117px;
+  font-weight: lighter;
+}
+.mansion p,
+.monsters p,
+.game-info p {
+  font-size: 36px;
+}
+.monsters {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.jack-carousel,
+.monsters,
+.play {
+  background-color: rgb(36, 35, 35);
+}
+.play,
+.mansion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  height: 200px;
+}
+.play > div {
+  width: 550px;
+}
+.play h1 {
+  font-size: 82px;
+}
+.play img,
+.mansion img {
+  height: 523px;
+  object-fit: cover;
 }
 
 /* Press Page */
@@ -196,7 +251,7 @@ a {
   padding-top: 80px;
   background: url(/public/images/background-unsplash.jpg) no-repeat center
     center/cover;
-  color: #333;
+  color: rgb(36, 35, 35);
 }
 .pressPage img {
   width: 384px;
@@ -210,7 +265,12 @@ a {
 .pressKit-page {
   background: url(/public/images/background-unsplash.jpg) no-repeat center
     center/cover;
-  padding-top: 64px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: rgb(36, 35, 35);
+}
+.pressKit-page h2 {
+  padding: 20px 0;
 }
 .hs-banner {
   background: url(/public/images/library_hero_background.png) no-repeat center
@@ -225,22 +285,28 @@ a {
   position: absolute;
 }
 .press-info {
-  padding: 40px 250px;
+  padding: 20px 250px;
   text-align: justify;
-  color: #333;
   line-height: 26px;
 }
 .press-info ul {
   padding-left: 20px;
 }
-.extras-img {
+.press-content {
+  background-color: rgb(36, 35, 35);
+  color: #fff;
+  margin: 0 200px;
+  padding: 20px;
+}
+.extras-img,
+.screenshots {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   justify-items: center;
-  padding: 30px 210px;
 }
-.extras-img img {
+.extras-img img,
+.screenshots img {
   height: 170px;
   max-width: 100%;
 }

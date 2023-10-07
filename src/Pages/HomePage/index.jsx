@@ -4,10 +4,7 @@ function HomePage() {
   return (
     <div className="homePage">
       <div className="hero">
-        <img src="/images/Sp-white.png" alt="white-logo" />
-        <Link>
-          <button>Read More</button>
-        </Link>
+        <img src="/images/white logo.png" alt="white-logo" />
       </div>
       <div className="latest-project">
         <img
