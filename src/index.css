@@ -1,3 +1,4 @@
+/* General */
 * {
   padding: 0;
   margin: 0;
@@ -12,21 +13,38 @@ a {
   text-decoration: none;
 }
 
+/* Home Page */
 .homePage {
   background-color: #000;
-  width: 100%;
 }
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.latest-project {
+  background: url(/images/library_hero_background.png) no-repeat center
+    center/cover;
+}
+.projects {
+  background-color: #000;
+  color: #fff;
+}
+.projects-title {
+  padding: 15px 0;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   position: fixed;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 64px;
-  padding: 0 32px;
   top: 0;
-  left: 0;
   z-index: 50;
+  padding: 0 30px;
   background-color: #000;
 }
 .nav-content ul {
@@ -35,45 +53,33 @@ a {
   align-items: center;
   list-style: none;
 }
-.nav-content li {
-  padding: 0 20px;
+.nav-content a {
+  padding: 10px 20px;
 }
 .nav-content a:hover {
   color: #646cffaa;
+  border-bottom: #646cffaa 2px solid;
+}
+.logo img {
+  width: 62px;
+}
+.logo:hover {
+  filter: drop-shadow(5px 5px 1.5em #646cffaa);
 }
 
-.social ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-.social a {
-  padding: 0 6px;
-}
-.social a:hover {
-  color: #646cffaa;
-}
-.hero img {
-  width: 100%;
-  height: 336px;
-  padding: 0;
-}
-
+/* Contacts Page */
 .contactsPage {
   background: url(/public/images/background-unsplash.jpg) no-repeat center
     center/cover;
   color: #333;
-  width: 100%;
-  padding: 110px;
-  margin-bottom: 64px;
+  padding: 90px 170px 0 170px;
 }
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 30px;
   text-align: center;
-  margin-top: 32px;
+  padding-bottom: 32px;
 }
 .contact-img img {
   width: 443px;
@@ -87,15 +93,38 @@ a {
 .contact-info h3 {
   padding-bottom: 16px;
 }
+
+/* Projects Page */
 .projectsPage {
-  padding: 110px;
+  padding: 76px 0 20px 0;
+  background: url(/public/images/background-unsplash.jpg) no-repeat center
+    center/cover;
   color: #333;
 }
+.projects-img {
+  width: 270px;
+}
+.projects-list {
+  padding: 20px 40px;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+.projects-list img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects-list img:hover {
+  opacity: 0.87;
+  filter: drop-shadow(5px 5px 1.5em #646cffaa);
+}
 
+/* About Page */
 .aboutPage {
-  padding: 100px 200px 40px 80px;
   position: relative;
-  width: 100%;
+  padding: 90px 250px 30px 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,29 +145,15 @@ a {
   left: 0px;
   opacity: 0.86;
 }
-
 .aboutPage h3 {
-  padding: 6px 0;
   position: relative;
 }
 .aboutPage p {
   padding: 6px 0;
   position: relative;
 }
-.aboutPage ul {
-  margin-left: 20px;
-  position: relative;
-}
-.pressPage {
-  padding-top: 110px;
-}
-.pressPage img {
-  width: 400px;
-  margin: 32px;
-}
-.pressPage img:hover {
-  opacity: 0.8;
-}
+
+/* Hooking Season Page */
 .hs-banner {
   position: relative;
   top: 0;
@@ -148,21 +163,138 @@ a {
   justify-content: center;
 }
 
-.img-top {
-  width: 788px;
+/* Reboop Page */
+.reboopPage {
+  background: url(/public/images/reboop-background.jpg) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.reboopPage::before {
+  content: '';
+  background: url(/public/images/reboop-background.jpg) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.reboopPage h1 {
+  @font-face {
+    font-family: ;
+    src: url(DigitalDream.ttf);
+  }
+}
+
+/* Jack O'Manor Page */
+.jackProject-page {
+  background: url(/public/images/jack-background.jpg) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+}
+
+/* Press Page */
+.pressPage {
+  padding-top: 80px;
+  background: url(/public/images/background-unsplash.jpg) no-repeat center
+    center/cover;
+  color: #333;
+}
+.pressPage img {
+  width: 384px;
+  padding: 20px 0;
+}
+.pressPage img:hover {
+  opacity: 0.8;
+}
+
+/* Hooking Season Press Kits Page */
+.pressKit-page {
+  background: url(/public/images/background-unsplash.jpg) no-repeat center
+    center/cover;
+  padding-top: 64px;
+}
+.hs-banner {
+  background: url(/public/images/library_hero_background.png) no-repeat center
+    center/cover;
+  height: 517px;
+  width: 100%;
+  position: relative;
+}
+.hs-banner img {
+  max-width: 100%;
   height: 430px;
   position: absolute;
 }
-.projects-img {
-  width: 270px;
+.press-info {
+  padding: 40px 250px;
+  text-align: justify;
+  color: #333;
+  line-height: 26px;
+}
+.press-info ul {
+  padding-left: 20px;
+}
+.extras-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  padding: 30px 210px;
+}
+.extras-img img {
+  height: 170px;
+  max-width: 100%;
 }
 
+/* Footer */
 .footerPage {
   background-color: #000;
   color: #fff;
-  text-align: center;
   padding: 10px 0;
 }
 .footerPage h2 {
   font-size: 42px;
+}
+.social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.social a {
+  padding: 0 6px;
+  display: flex;
+}
+.social a:hover {
+  color: #646cffaa;
+}
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email p {
+  padding: 0 5px;
+}
+.startUp {
+  width: 50px;
+  padding-top: 10px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+  .nav-content a {
+    padding: 10px;
+    font-size: smaller;
+  }
+  .nav-content a:hover {
+    border-bottom: none;
+  }
+  .contact-img img {
+    width: 70%;
+  }
 }

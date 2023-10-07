@@ -1,14 +1,8 @@
 function HSPressKit() {
   return (
-    <div>
+    <div className="pressKit-page">
       <div className="hs-banner">
         <img
-          className="img-back"
-          src="/images/library_hero_background.png"
-          alt="hero-banner"
-        />
-        <img
-          className="img-top"
           src="/images/store_capsule_main_transparent.png"
           alt="store-capsule"
         />
@@ -23,6 +17,7 @@ function HSPressKit() {
             this, all characters have special abilities.{' '}
           </p>
         </div>
+        <br />
         <div>
           <h2>History</h2>
           <p>
@@ -40,6 +35,7 @@ function HSPressKit() {
             to be.
           </p>
         </div>
+        <br />
         <div>
           <h2>Features</h2>
           <ul>
@@ -64,6 +60,23 @@ function HSPressKit() {
             <li>Local Multiplayer</li>
             <li>Steam Remote Play support</li>
           </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Videos</h2>
+        <h2>Screenshots</h2>
+        <div className="screenshots">
+          <img src="/images/store_capsule_main_transparent.png" alt="" />
+        </div>
+        <h2>Logo & Extras</h2>
+        <div className="extras-img">
+          <img src="/images/store_capsule_main_transparent.png" alt="" />
+          <img src="/images/library_logo_transparent HD.png" alt="" />
+          <img src="/images/Banner_Logo.png" alt="" />
+          <img src="/images/Icon.png" alt="" />
+          <img src="/images/Chars.png" alt="" />
+          <img src="/images/library_capsule.png" alt="" />
+          <img src="/images/library_hero_background.png" alt="" />
         </div>
       </div>
       <p></p>

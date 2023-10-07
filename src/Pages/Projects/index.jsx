@@ -3,30 +3,32 @@ import { Link } from 'react-router-dom';
 function Projects() {
   return (
     <div className="projectsPage">
-      <h1>Projects</h1>
-      <br />
-      <h3>Press the images to learn more</h3>
+      <div className="projects-title">
+        <h1>Projects</h1>
+        <br />
+        <h3>Press the images to learn more</h3>
+      </div>
       <div className="projects-list">
-        <Link>
+        <Link to="/hookingSeason">
           <img
-            src="/images/press.png"
+            src="/images/Banner_Logo.png"
             alt="hooking-season"
             className="projects-img"
           />
         </Link>
-        <Link>
+        <Link to="/wtfProject">
+          <img src="/images/factory.png" alt="wtf" className="projects-img" />
+        </Link>
+        <Link to="/reboopProject">
           <img
-            src="/images/factory.png"
-            alt="what-factory"
+            src="/images/reboop-logo.png"
+            alt="reboop"
             className="projects-img"
           />
         </Link>
-        <Link>
-          <img src="/images/press.png" alt="reboop" className="projects-img" />
-        </Link>
-        <Link>
+        <Link to="/jackProject">
           <img
-            src="/images/press.png"
+            src="/images/jack-logo.png"
             alt="jack-manor"
             className="projects-img"
           />

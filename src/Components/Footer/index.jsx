@@ -36,9 +36,15 @@ function Footer() {
             </Link>
           </li>
         </ul>
+        <br />
+        <div className="email">
+          <i className="fa-regular fa-envelope"></i>
+          <p>info@spawnpoint.pt</p>
+        </div>
       </div>
-      <br />
-      <p>Email: info@spawnpoint.pt</p>
+      <Link to="https://www.startuplisboa.com/" target="_blank">
+        <img className="startUp" src="/images/startUp-Lx.jpg" alt="" />
+      </Link>
     </div>
   );
 }

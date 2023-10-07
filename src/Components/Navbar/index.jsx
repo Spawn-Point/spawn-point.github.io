@@ -12,10 +12,13 @@ function Navbar() {
         <div className="nav-content">
           <ul>
             <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/currentProject">Current Project</Link>
+              <Link to="/hookingSeason">Current Project</Link>
             </li>
             <li>
               <Link to="/projects">Projects</Link>
