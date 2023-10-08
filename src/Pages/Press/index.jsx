@@ -4,6 +4,7 @@ function Press() {
   return (
     <div className="pressPage">
       <h1>Press Kits</h1>
+      <br />
       <Link to="/hooking-season-press-kit">
         <img src="/images/Banner_Logo.png" alt="press-img" />
       </Link>

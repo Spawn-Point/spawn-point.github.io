@@ -5,16 +5,16 @@ function WhatTheFactoryProject() {
         <img src="/images/factory.png" alt="wtf" />
       </div>
       <div className="carousel bg-dark">
-        <img src="/images/jack1.png" alt="jack1" />
-        <img src="/images/jack2.png" alt="jack2" />
-        <img src="/images/jack3.png" alt="jack3" />
-        <img src="/images/jack4.png" alt="jack4" />
-        <img src="/images/jack5.png" alt="jack5" />
-        <img src="/images/jack6.png" alt="jack6" />
-        <img src="/images/jack7.png" alt="jack7" />
-        <img src="/images/jack8.png" alt="jack8" />
-        <img src="/images/jack9.png" alt="jack9" />
-        <img src="/images/jack10.png" alt="jack10" />
+        <img src="/images/wtf1.png" alt="wtf1" />
+        <img src="/images/wtf2.png" alt="wtf2" />
+        <img src="/images/wtf3.png" alt="wtf3" />
+        <img src="/images/wtf4.png" alt="wtf4" />
+        <img src="/images/wtf5.png" alt="wtf5" />
+        <img src="/images/wtf6.png" alt="wtf6" />
+        <img src="/images/wtf7.png" alt="wtf7" />
+        <img src="/images/wtf8.png" alt="wtf8" />
+        <img src="/images/wtf9.png" alt="wtf9" />
+        <img src="/images/wtf10.png" alt="wtf10" />
       </div>
       <div className="the-game">
         <div className="game-info">

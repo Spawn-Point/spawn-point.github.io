@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Projects() {
   return (
     <div className="projectsPage">
-      <div className="projects-title">
+      <div>
         <h1>Projects</h1>
         <br />
         <h3>Press the images to learn more</h3>

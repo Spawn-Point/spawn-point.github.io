@@ -65,37 +65,139 @@ function HSPressKit() {
       <div className="press-content">
         <h2>Videos</h2>
         <iframe
-          width="420"
+          width="560"
           height="315"
-          src="https://www.youtube.com/watch?v=RnYhVbsJ9Uc&ab_channel=SpawnPoint"
+          src="https://www.youtube.com/embed/RnYhVbsJ9Uc?si=y69M-kJWPp9N0UGk"
+          title="YouTube video player"
+          frameBorder={'0'}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
         ></iframe>
+        <br />
         <br />
 
         <h2>Screenshots</h2>
         <div className="screenshots">
-          <img src="/images/screenshots/Screenshot_1.png" alt="" />
-          <img src="/images/screenshots/Screenshot_2.png" alt="" />
-          <img src="/images/screenshots/Screenshot_3.png" alt="" />
-          <img src="/images/screenshots/Screenshot_4.png" alt="" />
-          <img src="/images/screenshots/Screenshot_5.png" alt="" />
-          <img src="/images/screenshots/Screenshot_6.png" alt="" />
-          <img src="/images/screenshots/Screenshot_7.png" alt="" />
-          <img src="/images/screenshots/Screenshot_8.png" alt="" />
-          <img src="/images/screenshots/Screenshot_9.png" alt="" />
-          <img src="/images/screenshots/Screenshot_10.png" alt="" />
-          <img src="/images/screenshots/Screenshot_11.png" alt="" />
+          <a
+            href="/images/screenshots/Screenshot_1.png"
+            download={'Screenshot_1'}
+          >
+            <img
+              src="/images/screenshots/Screenshot_1.png"
+              alt="Screenshot_1"
+            />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_2.png"
+            download={'Screenshot_2'}
+          >
+            <img
+              src="/images/screenshots/Screenshot_2.png"
+              alt="Screenshot_2"
+            />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_3.png"
+            download={'Screenshot_3'}
+          >
+            <img src="/images/screenshots/Screenshot_3.png" alt="" />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_4.png"
+            download={'Screenshot_4'}
+          >
+            <img src="/images/screenshots/Screenshot_4.png" alt="" />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_5.png"
+            download={'Screenshot_5'}
+          >
+            <img src="/images/screenshots/Screenshot_5.png" alt="" />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_6.png"
+            download={'Screenshot_6'}
+          >
+            <img src="/images/screenshots/Screenshot_6.png" alt="" />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_7.png"
+            download={'Screenshot_7'}
+          >
+            <img src="/images/screenshots/Screenshot_7.png" alt="" />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_8.png"
+            download={'Screenshot_8'}
+          >
+            <img src="/images/screenshots/Screenshot_8.png" alt="" />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_9.png"
+            download={'Screenshot_9'}
+          >
+            <img src="/images/screenshots/Screenshot_9.png" alt="" />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_10.png"
+            download={'Screenshot_10'}
+          >
+            <img src="/images/screenshots/Screenshot_10.png" alt="" />
+          </a>
+          <a
+            href="/images/screenshots/Screenshot_11.png"
+            download={'Screenshot_11'}
+          >
+            <img
+              src="/images/screenshots/Screenshot_11.png"
+              alt="Screenshot_11"
+            />
+          </a>
         </div>
+        <br />
         <br />
 
         <h2>Logo & Extras</h2>
         <div className="extras-img">
-          <img src="/images/store_capsule_main_transparent.png" alt="" />
-          <img src="/images/library_logo_transparent HD.png" alt="" />
-          <img src="/images/Banner_Logo.png" alt="" />
-          <img src="/images/Icon.png" alt="" />
-          <img src="/images/Chars.png" alt="" />
-          <img src="/images/library_capsule.png" alt="" />
-          <img src="/images/library_hero_background.png" alt="" />
+          <a
+            href="/images/store_capsule_main_transparent.png"
+            download={'store_capsule_main_transparent'}
+          >
+            <img
+              src="/images/store_capsule_main_transparent.png"
+              alt="store_capsule_main_transparent"
+            />
+          </a>
+          <a
+            href="/images/library_logo_transparent HD.png"
+            download={'library_logo_transparent HD'}
+          >
+            <img
+              src="/images/library_logo_transparent HD.png"
+              alt="library_logo_transparent HD"
+            />
+          </a>
+          <a href="/images/Banner_Logo.png" download={'Banner_Logo'}>
+            <img src="/images/Banner_Logo.png" alt="Banner_Logo" />
+          </a>
+          <a href="/images/Icon.png" download={'Icon'}>
+            <img src="/images/Icon.png" alt="Icon" />
+          </a>
+          <a href="/images/Chars.png" download={'Chars'}>
+            <img src="/images/Chars.png" alt="Chars" />
+          </a>
+          <a href="/images/library_capsule.png" download={'library_capsule'}>
+            <img src="/images/library_capsule.png" alt="library_capsule" />
+          </a>
+          <a
+            href="/images/library_hero_background.png"
+            download={'library_hero_background'}
+          >
+            <img
+              src="/images/library_hero_background.png"
+              alt="library_hero_background"
+            />
+          </a>
         </div>
       </div>
       <p></p>
