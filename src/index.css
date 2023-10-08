@@ -12,6 +12,12 @@ a {
   color: #fff;
   text-decoration: none;
 }
+.bg-dark {
+  background-color: rgb(36, 35, 35);
+}
+.bg-bourdou {
+  background-color: #341c28;
+}
 @font-face {
   font-family: 'halloweenFont';
   src: url(/public/font-types/EspenHalloweenRegular.ttf);
@@ -127,7 +133,6 @@ a {
 .projects-list img {
   max-width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 .projects-list img:hover {
   opacity: 0.87;
@@ -176,22 +181,67 @@ a {
   justify-content: center;
 }
 
+/* What the Factory */
+.wtfPage {
+  padding-top: 100px;
+}
+.wtf-hero img {
+  width: 1151px;
+  height: 480px;
+  padding: 20px;
+}
+
 /* Reboop Page */
 .reboopPage {
   background: url(/public/images/reboop-background.jpg) no-repeat center
     center/cover;
   background-attachment: fixed;
   position: relative;
-}
-.reboopPage::before {
-  content: '';
-  background: url(/public/images/reboop-background.jpg) no-repeat center
-    center/cover;
-  background-attachment: fixed;
-  position: relative;
-}
-.reboopPage h1 {
   font-family: reboopFont;
+  color: #fff;
+  padding-bottom: 20px;
+  padding-top: 200px;
+}
+.reboop-intro {
+  font-family: reboopFont;
+  height: 350px;
+  align-items: center;
+  color: #ed5829;
+  font-size: 40px;
+  transform: rotate(-10deg);
+}
+.section-with1 {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.robots-info {
+  line-height: 1.9em;
+  width: 450px;
+}
+.robots-info p {
+  font-size: 18px;
+  padding-top: 20px;
+}
+.boop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+.boop-info {
+  background-color: #341c28;
+  border-radius: 50px;
+  width: 450px;
+  padding: 20px 10px;
+  line-height: 1.9em;
+}
+.boop-info p {
+  font-size: 18px;
+  padding-top: 20px;
 }
 
 /* Jack O'Manor Page */
@@ -201,6 +251,7 @@ a {
   background-attachment: fixed;
   color: #fff;
   font-family: halloweenFont;
+  padding-bottom: 30px;
 }
 .jack-intro {
   padding: 200px 0 100px 0;
@@ -211,34 +262,61 @@ a {
   font-size: 117px;
   font-weight: lighter;
 }
+.carousel {
+  display: flex;
+  height: 250px;
+  gap: 10px;
+  overflow-x: scroll;
+  padding: 15px 0;
+}
+.carousel img {
+  border: 2px solid #ffffff8a;
+}
+.carousel img:hover {
+  opacity: 0.7;
+}
 .mansion p,
-.monsters p,
-.game-info p {
+.section-with3 p {
   font-size: 36px;
 }
-.monsters {
+.section-with3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 450px;
+  border-radius: 50px;
 }
-.jack-carousel,
-.monsters,
-.play {
-  background-color: rgb(36, 35, 35);
+
+.the-game {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 70px 30px 100px;
+  text-align: center;
 }
+.game-info p {
+  width: 500px;
+  line-height: 1.3em;
+  font-size: 36px;
+}
+
 .play,
 .mansion {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 40px;
-  height: 200px;
+  padding: 70px 70px 30px 100px;
+  height: 250px;
 }
-.play > div {
-  width: 550px;
+.play-info {
+  width: 500px;
+  background-color: rgb(36, 35, 35);
+  border-radius: 50px;
+  padding: 20px 0;
 }
 .play h1 {
-  font-size: 82px;
+  font-size: 72px;
 }
 .play img,
 .mansion img {

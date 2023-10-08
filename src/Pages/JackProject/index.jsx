@@ -5,32 +5,35 @@ function JackProject() {
       <div className="jack-intro">
         <h1>Jack O'Manor</h1>
       </div>
-      <div className="jack-carousel">
-        <img src="/images/.png" alt="" />
-        <img src="/images/.png" alt="" />
-        <img src="/images/.png" alt="" />
-        <img src="/images/.png" alt="" />
-        <img src="/images/.png" alt="" />
-        <img src="/images/.png" alt="" />
-        <img src="/images/.png" alt="" />
-        <img src="/images/.png" alt="" />
-        <img src="/images/.png" alt="" />
+      <div className="carousel bg-dark">
+        <img src="/images/jack1.png" alt="jack1" />
+        <img src="/images/jack2.png" alt="jack2" />
+        <img src="/images/jack3.png" alt="jack3" />
+        <img src="/images/jack4.png" alt="jack4" />
+        <img src="/images/jack5.png" alt="jack5" />
+        <img src="/images/jack6.png" alt="jack6" />
+        <img src="/images/jack7.png" alt="jack7" />
+        <img src="/images/jack8.png" alt="jack8" />
+        <img src="/images/jack9.png" alt="jack9" />
+        <img src="/images/jack10.png" alt="jack10" />
       </div>
-      <div className="the-game">
-        <div className="game-info">
-          <h1>The Game</h1>
-          <p>
-            Play as Jack, a supernatural bounty hunter hired to rid a Spooky
-            mansion of its ghostly possession, in this fun RogueLike top down
-            game.
-          </p>
-        </div>
-        <div className="game-img">
-          <img src="/images/jack.png" alt="" width={'397px'} />
-        </div>
-        <div className="monsters">
-          <img src="/images/monster1.gif" alt="" width={'544px'} />
+      <div>
+        <div className="the-game">
           <div className="game-info">
+            <h1>The Game</h1>
+            <p>
+              Play as Jack, a supernatural bounty hunter hired to rid a Spooky
+              mansion of its ghostly possession, in this fun RogueLike top down
+              game.
+            </p>
+          </div>
+          <div className="game-img">
+            <img src="/images/jack.png" alt="" width={'397px'} />
+          </div>
+        </div>
+        <div className="section-with3 bg-dark">
+          <img src="/images/monster1.gif" alt="" width={'500px'} />
+          <div className="specific-info">
             <h1>Monsters</h1>
             <p>
               When the mansion was invaded by the supernatural several of its
@@ -45,7 +48,7 @@ function JackProject() {
       <div>
         <h1>The Mansion</h1>
         <div className="mansion">
-          <img src="/images/the-mansion.png" alt="" />
+          <img src="/images/the-mansion.gif" alt="" />
           <p>
             Explore an ever changing mansion with a different layout each time,
             explore the ruins as you battle your way to the source of this
@@ -55,7 +58,7 @@ function JackProject() {
         </div>
       </div>
       <div className="play">
-        <div>
+        <div className="play-info">
           <h1>Play in browser on Itch.io</h1>
           <Link to="https://spawnpoint.itch.io/jack-omanor" target="_blank">
             <i className="fa-brands fa-itch-io fa-6x"></i>
