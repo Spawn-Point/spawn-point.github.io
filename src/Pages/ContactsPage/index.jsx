@@ -1,6 +1,6 @@
 function Contacts() {
   return (
-    <div className="contactsPage">
+    <div className="contactsPage bg-dark">
       <h1>Meet the Team</h1>
       <br />
       <div className="contacts">

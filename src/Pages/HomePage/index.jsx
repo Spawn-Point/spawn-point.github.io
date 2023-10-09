@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
-    <div className="homePage">
+    <div className="homePage bg-dark">
       <div className="hero">
         <img src="/images/white logo.png" alt="white-logo" />
       </div>
@@ -36,7 +36,7 @@ function HomePage() {
           <Link to="/reboopProject">
             <img src="/images/reboop-logo.png" alt="reboop" />
           </Link>
-          <Link to="/reboopProject">
+          <Link to="/jackProject">
             <img src="/images/jack-logo.png" alt="jack-manor" />
           </Link>
         </div>

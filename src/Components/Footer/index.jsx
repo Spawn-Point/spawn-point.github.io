@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 function Footer() {
   return (
-    <div className="footerPage">
+    <div className="footerPage bg-dark">
       <div className="social">
         <ul>
           <li>

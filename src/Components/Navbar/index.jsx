@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <div>
-      <div className="navbar">
+      <div className="navbar bg-dark">
         <div className="logo">
           <Link to="/" style={{ textDecoration: 'none' }}>
             <img src="/images/logo.png" alt="logo" />

@@ -1,6 +1,6 @@
 function HSPressKit() {
   return (
-    <div className="pressKit-page">
+    <div className="pressKit-page bg-dark">
       <div className="hs-banner">
         <img
           src="/images/store_capsule_main_transparent.png"

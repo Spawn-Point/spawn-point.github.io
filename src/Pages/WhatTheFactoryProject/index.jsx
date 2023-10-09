@@ -1,7 +1,7 @@
 function WhatTheFactoryProject() {
   return (
     <div className="wtfPage">
-      <div className="wtf-hero">
+      <div className="wtf-showcase">
         <img src="/images/factory.png" alt="wtf" />
       </div>
       <div className="carousel bg-dark">
@@ -16,8 +16,8 @@ function WhatTheFactoryProject() {
         <img src="/images/wtf9.png" alt="wtf9" />
         <img src="/images/wtf10.png" alt="wtf10" />
       </div>
-      <div className="the-game">
-        <div className="game-info">
+      <div className="section-content">
+        <div className="section-info">
           <h1>The Game</h1>
           <p>
             Ready for totally avoidable factory accidents? In this game, it's
@@ -31,9 +31,9 @@ function WhatTheFactoryProject() {
           <img src="/images/spritesheet4.png" alt="" width={'397px'} />
         </div>
       </div>
-      <div className="section-with1 bg-dark">
-        <img src="/images/LV01_Page.png" alt="" width={'330px'} />
-        <div className="robots-info">
+      <div className="section-content bg-dark">
+        <img src="/images/LV01_Page.png" alt="" width={'332px'} />
+        <div className="section-info">
           <h1>Factories</h1>
           <p>
             Manage several factories that get more complex and demanding than

@@ -1,40 +1,7 @@
-/* General */
-* {
-  padding: 0;
-  margin: 0;
-}
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-a {
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-}
-.bg-dark {
-  background-color: #000;
-}
-.bg-bourdou {
-  background-color: #341c28;
-}
-@font-face {
-  font-family: 'halloweenFont';
-  src: url(/public/font-types/EspenHalloweenRegular.ttf);
-}
-@font-face {
-  font-family: 'reboopFont';
-  src: url(/public/font-types/DigitalDream.ttf);
-}
-@font-face {
-  font-family: 'hookingFont';
-  src: url(/public/font-types/PublicPixel.ttf);
-}
-
-/* Home Page */
+/* HOME PAGE */
 .homePage {
-  color: #646cffaa;
-  background-color: #000;
+  color: #fff;
+  text-align: center;
 }
 .hero img {
   width: 100%;
@@ -48,14 +15,18 @@ a {
   position: relative;
 }
 .banner-top {
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   position: absolute;
   z-index: 10;
   padding: 50px;
 }
+.banner-top:hover {
+  width: 610px;
+  height: 410px;
+}
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
   display: flex;
   position: fixed;
@@ -66,7 +37,6 @@ a {
   top: 0;
   z-index: 50;
   padding: 0 30px;
-  background-color: #000;
 }
 .nav-content ul {
   display: flex;
@@ -75,31 +45,31 @@ a {
   list-style: none;
 }
 .nav-content a {
-  padding: 10px 20px;
+  padding: 20px;
 }
 .nav-content a:hover {
-  color: #646cffaa;
-  border-bottom: #646cffaa 2px solid;
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 .logo img {
   width: 62px;
 }
 .logo:hover {
-  filter: drop-shadow(5px 5px 1.5em #646cffaa);
+  filter: drop-shadow(5px 5px 1.5em var(--secondary-color));
 }
 
-/* Contacts Page */
+/* CONTACTS PAGE */
 .contactsPage {
-  color: #646cffaa;
+  color: var(--primary-color);
   padding: 90px 170px 0 170px;
-  background-color: #000;
+  text-align: center;
 }
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
   text-align: center;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 .contact-img img {
   width: 300px;
@@ -108,18 +78,15 @@ a {
   margin-bottom: 15px;
   border-radius: 50%;
 }
-.contact-img img:hover {
-  filter: drop-shadow(5px 5px 1.5em #646cffaa);
-}
 .contact-info h3 {
   padding-bottom: 16px;
 }
 
-/* Projects Page */
+/* PROJECTS PAGE */
 .projectsPage {
-  padding: 76px 0 20px 0;
-  color: #646cffaa;
-  background-color: #000;
+  padding: 80px 0 20px 0;
+  color: var(--primary-color);
+  text-align: center;
 }
 .projects-list {
   padding: 20px;
@@ -132,133 +99,42 @@ a {
 }
 .projects-list img:hover {
   opacity: 0.87;
-  filter: drop-shadow(5px 5px 1.5em #646cffaa);
+  filter: drop-shadow(5px 5px 1.5em var(--secondary-color));
 }
 
-/* About Page */
+/* ABOUT PAGE */
 .aboutPage {
-  position: relative;
-  padding: 90px 250px 30px 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 40px;
-  color: #646cffaa;
-  line-height: 26px;
+  color: var(--primary-color);
+}
+.about-content {
+  padding: 90px 0 30px 0;
+  max-width: 65%;
   text-align: justify;
-  background-color: #000;
+  margin: auto;
+  line-height: 1.6em;
+}
+.about-content h3 {
+  padding: 25px 0 16px 0;
 }
 
-.aboutPage h3 {
-  position: relative;
-}
-.aboutPage p {
-  padding: 6px 0;
-  position: relative;
-}
-
-/* Hooking Season Page */
-.hookingSeasonPage {
-  padding-top: 64px;
-}
-.hs-banner {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/*  */
-
-/* What the Factory */
-.wtfPage {
-  padding-top: 100px;
-  padding-bottom: 30px;
-  background: url(/public/images/wtf-background.jpg) no-repeat center
-    center/cover;
-  background-attachment: fixed;
-  color: #fff;
-  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-}
-.wtf-hero img {
-  width: 1151px;
-  height: 480px;
-  padding: 20px;
-}
-
-/* Reboop Page */
-.reboopPage {
-  background: url(/public/images/reboop-background.jpg) no-repeat center
-    center/cover;
-  background-attachment: fixed;
-  position: relative;
-  font-family: reboopFont;
-  color: #fff;
-  padding-bottom: 20px;
-  padding-top: 200px;
-}
-.reboop-intro {
-  font-family: reboopFont;
-  height: 350px;
-  align-items: center;
-  color: #ed5829;
-  font-size: 40px;
-  transform: rotate(-10deg);
-}
-.section-with1 {
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-}
-.robots-info {
-  line-height: 1.9em;
-  width: 450px;
-}
-.robots-info p {
-  font-size: 18px;
-  padding-top: 20px;
-}
-.boop {
+/* Projects info and content */
+.section-content {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding-top: 20px;
+  padding: 20px 0;
 }
-.boop-info {
-  background-color: #341c28;
+.section-info {
   border-radius: 50px;
   width: 450px;
-  padding: 20px 10px;
+  padding: 20px;
   line-height: 1.9em;
 }
-.boop-info p {
+.section-info p {
   font-size: 18px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
-
-/* Jack O'Manor Page */
-.jackProject-page {
-  background: url(/public/images/jack-background.jpg) no-repeat center
-    center/cover;
-  background-attachment: fixed;
-  color: #fff;
-  font-family: halloweenFont;
-  padding-bottom: 30px;
-}
-.jack-intro {
-  padding: 200px 0 190px 0;
-}
-.jack-intro h1 {
-  letter-spacing: 0.01em;
-  font-size: 117px;
-  font-weight: lighter;
-}
-
 .carousel {
   display: flex;
   height: 250px;
@@ -272,37 +148,163 @@ a {
 .carousel img:hover {
   opacity: 0.7;
 }
-.mansion p,
-.section-with3 p {
-  font-size: 36px;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff8a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* HOOKING SEASON PAGE */
+.hookingSeasonPage {
+  padding-top: 64px;
+  font-family: hookingFont;
+  color: var(--primary-color);
+  text-align: center;
+}
+.hookingSeasonPage h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.hookingSeasonPage p {
+  font-size: 18px;
+}
+.hs-banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roster {
+  font-size: 18px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hook-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.steam {
+  display: flex;
+  height: 400px;
+}
+.steam-info {
+  padding-top: 70px;
+  padding-left: 150px;
+  line-height: 1.7em;
+  width: 500px;
+}
+.steam-info h1 {
+  line-height: 1.6em;
+  padding-bottom: 20px;
+}
+.discord img {
+  width: 100%;
+}
+.lxGame {
+  display: flex;
+  align-items: center;
+  width: 750px;
+  line-height: 1.7em;
+  margin: auto;
+}
+.dreamHack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WHAT THE FACTORY PAGE */
+.wtfPage {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background: url(/public/images/wtf-background.jpg) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  color: var(--primary-color);
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+  text-align: center;
+}
+.wtf-showcase img {
+  width: 1151px;
+  height: 480px;
+  padding: 20px;
+}
+.robots-img {
+  width: 530px;
+  height: 450px;
+}
+
+/* REBOOP PAGE */
+.reboopPage {
+  background: url(/public/images/reboop-background.jpg) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  position: relative;
+  font-family: reboopFont;
+  color: var(--primary-color);
+  padding-top: 200px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.reboop-showcase {
+  font-family: reboopFont;
+  height: 350px;
+  color: #ed5829;
+  font-size: 40px;
+  transform: rotate(-10deg);
+}
+
+/* JACK O'MANOR PAGE */
+.jackProject-page {
+  background: url(/public/images/jack-background.jpg) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  color: var(--primary-color);
+  font-family: halloweenFont;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.jack-showcase {
+  padding: 200px 0 190px 0;
+}
+.jack-showcase h1 {
+  letter-spacing: 0.01em;
+  font-size: 117px;
+  font-weight: lighter;
+}
+.jackProject-page p {
+  width: 500px;
+  line-height: 1.3em;
+  font-size: 32px;
 }
 .section-with3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 450px;
-  border-radius: 50px;
-}
-.the-game {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 50px;
-  padding: 60px 70px 30px 100px;
-  text-align: center;
-}
-.game-info p {
-  width: 500px;
-  line-height: 1.3em;
-  font-size: 36px;
+  height: 400px;
+  margin-bottom: 30px;
+  padding-right: 30px;
 }
 .play,
 .mansion {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 70px 70px 30px 100px;
-  height: 250px;
+  margin: auto;
+  padding: 80px 0;
+  height: 280px;
+  width: 1050px;
 }
 .play-info {
   width: 500px;
@@ -310,7 +312,7 @@ a {
   padding: 20px 0;
 }
 .play h1 {
-  font-size: 72px;
+  font-size: 68px;
 }
 .play img,
 .mansion img {
@@ -318,26 +320,27 @@ a {
   object-fit: cover;
 }
 
-/* Press Page */
+/* PRESS PAGE */
 .pressPage {
   padding-top: 80px;
-  color: #646cffaa;
-  background-color: #000;
+  padding-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
 }
 .pressPage img {
   width: 384px;
 }
 .pressPage img:hover {
   opacity: 0.8;
-  filter: drop-shadow(5px 5px 1.5em #646cffaa);
+  filter: drop-shadow(5px 5px 1.5em var(--secondary-color));
 }
 
-/* Hooking Season Press Kits Page */
+/* HOOKING SEASON PRESS KITS PAGE */
 .pressKit-page {
   padding-top: 60px;
   padding-bottom: 40px;
-  color: #646cffaa;
-  background-color: #000;
+  color: var(--primary-color);
+  text-align: center;
 }
 .pressKit-page h2 {
   padding: 20px 0;
@@ -360,7 +363,6 @@ a {
   padding-left: 20px;
 }
 .press-content {
-  color: #646cffaa;
   margin: 0 200px;
   padding: 20px;
 }
@@ -376,16 +378,15 @@ a {
   height: 170px;
   max-width: 100%;
 }
-
 .screenshots img:hover {
   opacity: 0.8;
 }
 
-/* Footer */
+/* FOOTER */
 .footerPage {
-  color: #fff;
   padding: 10px 0;
-  background-color: #000;
+  color: var(--primary-color);
+  text-align: center;
 }
 .footerPage h2 {
   font-size: 42px;
@@ -401,7 +402,7 @@ a {
   display: flex;
 }
 .social a:hover {
-  color: #646cffaa;
+  color: var(--secondary-color);
 }
 .email {
   display: flex;
@@ -416,7 +417,7 @@ a {
   padding-top: 10px;
 }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

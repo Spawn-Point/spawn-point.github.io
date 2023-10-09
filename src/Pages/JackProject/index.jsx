@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 function JackProject() {
   return (
     <div className="jackProject-page">
-      <div className="jack-intro">
+      <div className="jack-showcase">
         <h1>Jack O'Manor</h1>
       </div>
       <div className="carousel bg-dark">
@@ -18,7 +18,7 @@ function JackProject() {
         <img src="/images/jack10.png" alt="jack10" />
       </div>
       <div>
-        <div className="the-game">
+        <div className="section-content">
           <div className="game-info">
             <h1>The Game</h1>
             <p>
@@ -33,7 +33,7 @@ function JackProject() {
         </div>
         <div className="section-with3 bg-dark">
           <img src="/images/monster1.gif" alt="" width={'500px'} />
-          <div className="specific-info">
+          <div className="section-info">
             <h1>Monsters</h1>
             <p>
               When the mansion was invaded by the supernatural several of its

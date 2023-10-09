@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function HookingSeason() {
   return (
     <div className="hookingSeasonPage">
@@ -7,7 +8,7 @@ function HookingSeason() {
           alt="store-capsule"
         />
       </div>
-      <div className="carousel bg-dark">
+      <section className="carousel bg-dark">
         <img src="/images/hs1.png" alt="hs1" />
         <video
           src="/public/images/49 - FirstTrailer.mp4"
@@ -48,19 +49,102 @@ function HookingSeason() {
         <img src="/images/hs30.png" alt="hs30" />
         <img src="/images/hs31.png" alt="hs31" />
         <img src="/images/hs32.png" alt="hs32" />
-      </div>
-      <div className="the-game bg-sky">
-        <div className="game-info">
+      </section>
+      <section className="hs-game hs-banner">
+        <div className="section-info">
           <h1>The Game</h1>
           <p>
             Hooking Season is a chaotic couch competitive new take on the twin
             stick shooter gameplay. ​
           </p>
         </div>
-        <div className="game-img">
+        <div>
           <img src="/images/jack.png" alt="" width={'340px'} />
         </div>
-      </div>
+      </section>
+      <section className="roster bg-dark">
+        <div>
+          <img src="/images/Chars.png" alt="" width={'500px'} />
+        </div>
+        <div className="section-info">
+          <h1>Roster</h1>
+          <p>
+            Play as your favorite holiday character and use their unique
+            abilities to help their team prove once and for all which is the
+            best holiday and take the Holiday Throne.
+          </p>
+        </div>
+      </section>
+      <section className="hook hs-banner">
+        <h1>Hook</h1>
+        <div className="hook-section1">
+          <img src="/images/Page_Eat_Anim.gif" alt="Page_Eat_Anim" />
+          <p>
+            The hook is the main tool in your arsenal, you can use it to quickly
+            move around the map, grab items and enemies from afar. Each
+            character has their own signature hook in order to make sure they
+            stand out in any brawl.
+          </p>
+        </div>
+        <div className="hook-section2">
+          <p>
+            Size is a very important part of mastering your hook technique, when
+            hooking lighter objects, or players, they get pulled towards you.
+          </p>
+          <p>
+            Hooking heavier objects, such as walls or cars, will cause you to
+            move towards them instead BUT beware hooking heavier players doesn't
+            seem to work very well and often it just makes them angrier.
+          </p>
+          <p>
+            Weight can be gained by either hooking/eating food or smaller
+            players.
+          </p>
+        </div>
+      </section>
+      <section className="steam bg-dark">
+        <div className="steam-info">
+          <h1>Coming to Steam 31st of October</h1>
+          <Link
+            to="https://store.steampowered.com/app/2008530/Hooking_Season/"
+            target="_blank"
+          >
+            <i className="fab fa-steam fa-6x"></i>
+          </Link>
+        </div>
+        <img src="/images/Bunny.png" alt="bunny" width={'550px'} />
+      </section>
+      <section className="discord">
+        <Link to="https://discord.com/invite/qrCV945w" target="_blank">
+          <img src="/images/Discord.png" alt="discord" />
+        </Link>
+      </section>
+      <section className="bg-dark">
+        <div className="lxGame">
+          <Link>
+            <img src="/images/LGW-logo.png" alt="LGW-logo" width={'339px'} />
+          </Link>
+          <p>
+            Thank you for everyone who came to check out the game, and
+            congratulations to all our prize winners.
+          </p>
+        </div>
+        <div className="dreamHack">
+          <Link to="https://dreamhack.com/atlanta/">
+            <img
+              className="dreamHack-img"
+              src="/images/DreamHack_Logo_RGB_WHITE.png"
+              alt="DreamHack"
+              width={'605px'}
+            />
+          </Link>
+          <img
+            src="/images/Leprochaun2.png"
+            alt="Leprochaun2"
+            width={'346px'}
+          />
+        </div>
+      </section>
     </div>
   );
 }

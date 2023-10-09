@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Press() {
   return (
-    <div className="pressPage">
+    <div className="pressPage bg-dark">
       <h1>Press Kits</h1>
       <br />
       <Link to="/hooking-season-press-kit">

@@ -1,10 +1,10 @@
 function ReboopProject() {
   return (
     <div className="reboopPage">
-      <div className="reboop-intro">
+      <section className="reboop-showcase">
         <h1>REBOOP</h1>
-      </div>
-      <div className="carousel bg-bourdou">
+      </section>
+      <section className="carousel bg-bourdou">
         <img src="/images/reboop1.png" alt="reboop1" />
         <img src="/images/reboop2.png" alt="reboop2" />
         <img src="/images/reboop3.png" alt="reboop3" />
@@ -15,10 +15,10 @@ function ReboopProject() {
         <img src="/images/reboop8.png" alt="reboop8" />
         <img src="/images/reboop9.png" alt="reboop9" />
         <img src="/images/reboop10.png" alt="reboop10" />
-      </div>
+      </section>
       <div>
-        <div className="the-game">
-          <div className="boop-info">
+        <section className="section-content">
+          <div className="section-info bg-bourdou">
             <h1>The Game</h1>
             <p>
               Back in the days Right before the plague of 2020 we participated
@@ -31,10 +31,10 @@ function ReboopProject() {
           <div className="game-img">
             <img src="/images/GGJAM.png" alt="" width={'397px'} />
           </div>
-        </div>
-        <div className="section-with1 bg-bourdou">
-          <img src="/images/Bots.png" alt="" width={'530px'} />
-          <div className="robots-info">
+        </section>
+        <section className="section-content bg-bourdou">
+          <img className="robots-img" src="/images/Bots.png" alt="" />
+          <div className="section-info">
             <h1>ROBOTS</h1>
             <p>
               In this world the inhabitants make due with all they can find, and
@@ -43,22 +43,20 @@ function ReboopProject() {
               the robots as they might be able to help rebuild you.
             </p>
           </div>
-        </div>
+        </section>
       </div>
-      <div>
-        <div className="boop">
-          <div className="boop-info">
-            <h1>BOOP</h1>
-            <p>
-              Boop is a robot of unknown origins. he finds himself as a
-              disembodied head that can only move on his spring neck. The more
-              you pieces you find the better boop can move the more of this
-              world he can explore to hopefully find out what happened.
-            </p>
-          </div>
-          <img src="/images/BoopHead.png" alt="boopHead" />
+      <section className="section-content">
+        <div className="section-info bg-bourdou">
+          <h1>BOOP</h1>
+          <p>
+            Boop is a robot of unknown origins. he finds himself as a
+            disembodied head that can only move on his spring neck. The more you
+            pieces you find the better boop can move the more of this world he
+            can explore to hopefully find out what happened.
+          </p>
         </div>
-      </div>
+        <img src="/images/BoopHead.png" alt="boopHead" />
+      </section>
     </div>
   );
 }
