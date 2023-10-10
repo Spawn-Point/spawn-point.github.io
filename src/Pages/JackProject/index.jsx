@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 function JackProject() {
   return (
     <div className="jackProject-page">
-      <div className="jack-showcase">
+      <section className="jack-showcase">
         <h1>Jack O'Manor</h1>
-      </div>
-      <div className="carousel bg-dark">
+      </section>
+      <section className="carousel bg-dark">
         <img src="/images/jack1.png" alt="jack1" />
         <img src="/images/jack2.png" alt="jack2" />
         <img src="/images/jack3.png" alt="jack3" />
@@ -16,10 +16,10 @@ function JackProject() {
         <img src="/images/jack8.png" alt="jack8" />
         <img src="/images/jack9.png" alt="jack9" />
         <img src="/images/jack10.png" alt="jack10" />
-      </div>
+      </section>
       <div>
-        <div className="section-content">
-          <div className="game-info">
+        <section className="section-content">
+          <div className="section-info">
             <h1>The Game</h1>
             <p>
               Play as Jack, a supernatural bounty hunter hired to rid a Spooky
@@ -27,11 +27,9 @@ function JackProject() {
               game.
             </p>
           </div>
-          <div className="game-img">
-            <img src="/images/jack.png" alt="" width={'340px'} />
-          </div>
-        </div>
-        <div className="section-with3 bg-dark">
+          <img src="/images/jack.png" alt="jack" width={'340px'} />
+        </section>
+        <section className="section-content bg-dark">
           <img src="/images/monster1.gif" alt="" width={'500px'} />
           <div className="section-info">
             <h1>Monsters</h1>
@@ -43,9 +41,9 @@ function JackProject() {
             </p>
           </div>
           <img src="/images/monster2.gif" alt="" width={'265px'} />
-        </div>
+        </section>
       </div>
-      <div>
+      <section>
         <h1>The Mansion</h1>
         <div className="mansion">
           <img src="/images/the-mansion.gif" alt="" />
@@ -56,8 +54,8 @@ function JackProject() {
             your journey but you will definitely find danger behind every door.
           </p>
         </div>
-      </div>
-      <div className="play">
+      </section>
+      <section className="play">
         <div className="play-info bg-dark">
           <h1>Play in browser on Itch.io</h1>
           <Link to="https://spawnpoint.itch.io/jack-omanor" target="_blank">
@@ -65,7 +63,7 @@ function JackProject() {
           </Link>
         </div>
         <img src="/images/pumpkin.gif" alt="pumpkin" width={'600px'} />
-      </div>
+      </section>
     </div>
   );
 }

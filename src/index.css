@@ -117,12 +117,12 @@
   padding: 25px 0 16px 0;
 }
 
-/* Projects info and content */
+/* PROJECTS INFO AND CONTENT */
 .section-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   padding: 20px 0;
 }
 .section-info {
@@ -134,6 +134,10 @@
 .section-info p {
   font-size: 18px;
   padding-top: 30px;
+}
+.projects-img {
+  width: 530px;
+  height: 450px;
 }
 .carousel {
   display: flex;
@@ -227,8 +231,7 @@
 
 /* WHAT THE FACTORY PAGE */
 .wtfPage {
-  padding-top: 100px;
-  padding-bottom: 30px;
+  padding-top: 80px;
   background: url(/public/images/wtf-background.jpg) no-repeat center
     center/cover;
   background-attachment: fixed;
@@ -239,11 +242,7 @@
 .wtf-showcase img {
   width: 1151px;
   height: 480px;
-  padding: 20px;
-}
-.robots-img {
-  width: 530px;
-  height: 450px;
+  padding: 30px 20px;
 }
 
 /* REBOOP PAGE */
@@ -294,7 +293,6 @@
   align-items: center;
   justify-content: space-around;
   height: 400px;
-  margin-bottom: 30px;
   padding-right: 30px;
 }
 .play,
@@ -338,7 +336,7 @@
 /* HOOKING SEASON PRESS KITS PAGE */
 .pressKit-page {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   color: var(--primary-color);
   text-align: center;
 }

@@ -1,10 +1,10 @@
 function WhatTheFactoryProject() {
   return (
     <div className="wtfPage">
-      <div className="wtf-showcase">
+      <section className="wtf-showcase">
         <img src="/images/factory.png" alt="wtf" />
-      </div>
-      <div className="carousel bg-dark">
+      </section>
+      <section className="carousel bg-dark">
         <img src="/images/wtf1.png" alt="wtf1" />
         <img src="/images/wtf2.png" alt="wtf2" />
         <img src="/images/wtf3.png" alt="wtf3" />
@@ -15,8 +15,8 @@ function WhatTheFactoryProject() {
         <img src="/images/wtf8.png" alt="wtf8" />
         <img src="/images/wtf9.png" alt="wtf9" />
         <img src="/images/wtf10.png" alt="wtf10" />
-      </div>
-      <div className="section-content">
+      </section>
+      <section className="section-content">
         <div className="section-info">
           <h1>The Game</h1>
           <p>
@@ -27,11 +27,9 @@ function WhatTheFactoryProject() {
             quick-thinking experiences this game is for you!
           </p>
         </div>
-        <div className="game-img">
-          <img src="/images/spritesheet4.png" alt="" width={'397px'} />
-        </div>
-      </div>
-      <div className="section-content bg-dark">
+        <img src="/images/spritesheet4.png" alt="" width={'397px'} />
+      </section>
+      <section className="section-content bg-dark">
         <img src="/images/LV01_Page.png" alt="" width={'332px'} />
         <div className="section-info">
           <h1>Factories</h1>
@@ -41,10 +39,10 @@ function WhatTheFactoryProject() {
             at the end of the day, while making the most money.
           </p>
         </div>
-      </div>
-      <div className="section-with3">
+      </section>
+      <section className="section-with3">
         <img src="/images/Pit.png" alt="" width={'500px'} />
-        <div className="robots-info">
+        <div className="section-info">
           <div>
             <img src="/images/Blood_Splat.png" alt="" />
             <h1>Machines</h1>
@@ -56,7 +54,7 @@ function WhatTheFactoryProject() {
           </p>
         </div>
         <img src="/images/Stuffing.png" alt="" width={'265px'} />
-      </div>
+      </section>
     </div>
   );
 }

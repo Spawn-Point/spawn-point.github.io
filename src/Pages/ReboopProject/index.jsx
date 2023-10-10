@@ -28,12 +28,10 @@ function ReboopProject() {
               reconstruct his disjointed body with the help of other bots.
             </p>
           </div>
-          <div className="game-img">
-            <img src="/images/GGJAM.png" alt="" width={'397px'} />
-          </div>
+          <img src="/images/GGJAM.png" alt="" width={'397px'} />
         </section>
         <section className="section-content bg-bourdou">
-          <img className="robots-img" src="/images/Bots.png" alt="" />
+          <img className="projects-img" src="/images/Bots.png" alt="" />
           <div className="section-info">
             <h1>ROBOTS</h1>
             <p>

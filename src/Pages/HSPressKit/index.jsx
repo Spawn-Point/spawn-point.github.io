@@ -69,8 +69,8 @@ function HSPressKit() {
           height="315"
           src="https://www.youtube.com/embed/RnYhVbsJ9Uc?si=y69M-kJWPp9N0UGk"
           title="YouTube video player"
-          frameBorder={'0'}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          frameBorder={'none'}
           allowfullscreen
         ></iframe>
         <br />
