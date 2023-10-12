@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="aboutPage bg-dark">
+    <div className="aboutPage bg-dark page">
       <section className="about-content">
         <div>
           <h3>About Us</h3>

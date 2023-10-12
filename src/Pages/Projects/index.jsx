@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Projects() {
   return (
-    <div className="projectsPage bg-dark">
+    <div className="projectsPage bg-dark page">
       <div>
         <h1>Projects</h1>
         <br />

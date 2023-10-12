@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
-    <div className="homePage bg-dark">
+    <div className="homePage bg-dark page">
       <div className="hero">
         <img src="/images/white logo.png" alt="white-logo" />
       </div>

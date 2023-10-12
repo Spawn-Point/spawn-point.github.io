@@ -1,9 +1,28 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
   return (
     <div>
-      <div className="navbar bg-dark">
+      <div className={`navbar bg-dark navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="logo">
           <Link to="/" style={{ textDecoration: 'none' }}>
             <img src="/images/logo.png" alt="logo" />

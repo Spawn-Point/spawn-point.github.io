@@ -1,20 +1,42 @@
+import { Link } from 'react-router-dom';
+
 function ReboopProject() {
   return (
-    <div className="reboopPage">
+    <div className="reboop-page page">
       <section className="reboop-showcase">
         <h1>REBOOP</h1>
       </section>
       <section className="carousel bg-bourdou">
-        <img src="/images/reboop1.png" alt="reboop1" />
-        <img src="/images/reboop2.png" alt="reboop2" />
-        <img src="/images/reboop3.png" alt="reboop3" />
-        <img src="/images/reboop4.png" alt="reboop4" />
-        <img src="/images/reboop5.png" alt="reboop5" />
-        <img src="/images/reboop6.png" alt="reboop6" />
-        <img src="/images/reboop7.png" alt="reboop7" />
-        <img src="/images/reboop8.png" alt="reboop8" />
-        <img src="/images/reboop9.png" alt="reboop9" />
-        <img src="/images/reboop10.png" alt="reboop10" />
+        <Link to="/images/reboop1.png" target="_blank">
+          <img src="/images/reboop1.png" alt="reboop1" />
+        </Link>
+        <Link to="/images/reboop2.png" target="_blank">
+          <img src="/images/reboop2.png" alt="reboop2" />
+        </Link>
+        <Link to="/images/reboop3.png" target="_blank">
+          <img src="/images/reboop3.png" alt="reboop3" />
+        </Link>
+        <Link to="/images/reboop4.png" target="_blank">
+          <img src="/images/reboop4.png" alt="reboop4" />
+        </Link>
+        <Link to="/images/reboop5.png" target="_blank">
+          <img src="/images/reboop5.png" alt="reboop5" />
+        </Link>
+        <Link to="/images/reboop6.png" target="_blank">
+          <img src="/images/reboop6.png" alt="reboop6" />
+        </Link>
+        <Link to="/images/reboop7.png" target="_blank">
+          <img src="/images/reboop7.png" alt="reboop7" />
+        </Link>
+        <Link to="/images/reboop8.png" target="_blank">
+          <img src="/images/reboop8.png" alt="reboop8" />
+        </Link>
+        <Link to="/images/reboop9.png" target="_blank">
+          <img src="/images/reboop9.png" alt="reboop9" />
+        </Link>
+        <Link to="/images/reboop10.png" target="_blank">
+          <img src="/images/reboop10.png" alt="reboop10" />
+        </Link>
       </section>
       <div>
         <section className="section-content">
@@ -28,10 +50,15 @@ function ReboopProject() {
               reconstruct his disjointed body with the help of other bots.
             </p>
           </div>
-          <img src="/images/GGJAM.png" alt="" width={'397px'} />
+          <img src="/images/GGJAM.png" alt="" width={'35%'} />
         </section>
         <section className="section-content bg-bourdou">
-          <img className="projects-img" src="/images/Bots.png" alt="" />
+          <img
+            className="projects-img"
+            src="/images/Bots.png"
+            alt=""
+            width={'50%'}
+          />
           <div className="section-info">
             <h1>ROBOTS</h1>
             <p>

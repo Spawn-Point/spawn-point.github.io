@@ -15,15 +15,13 @@
   position: relative;
 }
 .banner-top {
-  width: 600px;
-  height: 400px;
+  width: 47%;
   position: absolute;
   z-index: 10;
-  padding: 50px;
+  margin-left: 40px;
 }
 .banner-top:hover {
-  width: 610px;
-  height: 410px;
+  width: 48%;
 }
 
 /* NAVBAR */
@@ -36,7 +34,8 @@
   height: 64px;
   top: 0;
   z-index: 50;
-  padding: 0 30px;
+  padding: 10px;
+  transition: border-bottom 0.3s ease; /* Add a smooth transition for the border */
 }
 .nav-content ul {
   display: flex;
@@ -57,12 +56,16 @@
 .logo:hover {
   filter: drop-shadow(5px 5px 1.5em var(--secondary-color));
 }
+.navbar.scrolled {
+  border-bottom: 1px solid #ffffff8a;
+}
 
 /* CONTACTS PAGE */
 .contactsPage {
   color: var(--primary-color);
   padding: 90px 170px 0 170px;
   text-align: center;
+  width: 100%;
 }
 .contacts {
   display: grid;
@@ -71,8 +74,8 @@
   text-align: center;
   padding: 32px 0;
 }
-.contact-img img {
-  width: 300px;
+.contacts img {
+  width: 60%;
   height: 300px;
   object-fit: cover;
   margin-bottom: 15px;
@@ -88,33 +91,205 @@
   color: var(--primary-color);
   text-align: center;
 }
-.projects-list {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.projects-list img {
-  height: 100%;
-  width: 290px;
-}
-.projects-list img:hover {
-  opacity: 0.87;
-  filter: drop-shadow(5px 5px 1.5em var(--secondary-color));
-}
 
 /* ABOUT PAGE */
 .aboutPage {
   color: var(--primary-color);
 }
 .about-content {
-  padding: 90px 0 30px 0;
+  padding-top: 90px;
+  padding-bottom: 30px;
   max-width: 65%;
   text-align: justify;
   margin: auto;
-  line-height: 1.6em;
+  line-height: 1.6;
 }
 .about-content h3 {
-  padding: 25px 0 16px 0;
+  padding: 20px 0;
+}
+
+/* HOOKING SEASON PAGE */
+.hooking-season-page {
+  padding-top: 64px;
+  font-family: hookingFont;
+  color: var(--primary-color);
+  text-align: center;
+}
+.hooking-season-page h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.jack-img {
+  width: 30%;
+  height: 329px;
+}
+.hook-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.hook-image {
+  width: 40%;
+}
+.hook-section > p {
+  flex-basis: 40%;
+}
+.hook-section-paragraphs {
+  width: 100%;
+}
+.steam-info {
+  padding-top: 70px;
+  padding-left: 150px;
+  line-height: 1.7;
+  width: 50%;
+}
+.steam-info h1 {
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+.discord img {
+  width: 100%;
+}
+.lxGame {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  line-height: 1.7;
+  margin: auto;
+}
+.hooking-season-page a:hover {
+  opacity: 0.85;
+}
+.leprochaun-img {
+  margin-top: -70px;
+}
+
+/* WHAT THE FACTORY PAGE */
+.wtfPage {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background: url(/public/images/wtf-background.jpg) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  color: var(--primary-color);
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+  text-align: center;
+}
+.wtf-showcase img {
+  width: 90%;
+  height: auto;
+  padding: 30px;
+}
+.constructorMan {
+  height: 450px;
+  width: 397px;
+}
+.factory-sheet {
+  width: 30%;
+  height: 440px;
+  margin: 10px 0;
+}
+.factory-text p {
+  font-size: 24px;
+}
+.section-with3 {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.machines-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.machines-title h1 {
+  padding: 0 20px;
+}
+
+/* REBOOP PAGE */
+.reboop-page {
+  background: url(/public/images/reboop-background.jpg) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  position: relative;
+  font-family: reboopFont;
+  color: var(--primary-color);
+  padding-top: 70px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.reboop-showcase {
+  overflow: hidden;
+  max-width: 100%;
+}
+.reboop-showcase h1 {
+  font-family: reboopFont;
+  color: #ed5829;
+  font-size: 150px;
+  /* position: absolute; */
+  padding: 150px 0;
+  transform: rotate(-10deg);
+  transform-origin: center center;
+}
+.reboop-page a:hover {
+  opacity: 0.85;
+}
+
+/* JACK O'MANOR PAGE */
+.jack-project-page {
+  background: url(/public/images/jack-background.jpg) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  color: var(--primary-color);
+  font-family: halloweenFont;
+  text-align: center;
+}
+.jack-showcase {
+  padding: 200px 0 190px 0;
+}
+.jack-showcase h1 {
+  letter-spacing: 0.01em;
+  font-size: 117px;
+  font-weight: lighter;
+}
+.jack-project-page p {
+  width: 50%;
+  line-height: 1.3;
+  font-size: 32px;
+}
+.jack-project-page a:hover {
+  opacity: 0.85;
+}
+.monsters-content {
+  margin-bottom: 30px;
+}
+.monsters-content,
+.mansion-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.monsters-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -200px 0 -250px;
+}
+.mansion-content p {
+  padding: 0 20px;
+  margin-top: -50px;
+}
+.play-info {
+  width: 38%;
+  border-radius: 50px;
+  padding: 20px;
+}
+.play-info h1 {
+  font-size: 68px;
 }
 
 /* PROJECTS INFO AND CONTENT */
@@ -123,21 +298,44 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
-  padding: 20px 0;
+  padding: 20px 60px;
 }
 .section-info {
   border-radius: 50px;
-  width: 450px;
+  width: 45%;
   padding: 20px;
-  line-height: 1.9em;
+  line-height: 1.9;
 }
 .section-info p {
-  font-size: 18px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
-.projects-img {
-  width: 530px;
-  height: 450px;
+.projects-list {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.projects-list img {
+  height: 100%;
+  width: 92%;
+}
+.projects-list img:hover {
+  opacity: 0.87;
+  filter: drop-shadow(5px 5px 1.5em var(--secondary-color));
+  transform: translateY(-10px);
+}
+.hs-banner {
+  width: 100%;
+  background: url(/public/images/library_hero_background.png) no-repeat center
+    center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px;
+}
+.hooking-season-showcase img {
+  height: 430px;
+  margin: 20px;
 }
 .carousel {
   display: flex;
@@ -145,6 +343,9 @@
   gap: 10px;
   overflow-x: scroll;
   padding: 15px 0;
+}
+.carousel a {
+  display: flex;
 }
 .carousel img {
   border: 2px solid #ffffff8a;
@@ -165,159 +366,6 @@
   background: #777;
 }
 
-/* HOOKING SEASON PAGE */
-.hookingSeasonPage {
-  padding-top: 64px;
-  font-family: hookingFont;
-  color: var(--primary-color);
-  text-align: center;
-}
-.hookingSeasonPage h1 {
-  font-size: 40px;
-  padding-bottom: 20px;
-}
-.hookingSeasonPage p {
-  font-size: 18px;
-}
-.hs-banner {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.roster {
-  font-size: 18px;
-  padding-top: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.hook-section1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.steam {
-  display: flex;
-  height: 400px;
-}
-.steam-info {
-  padding-top: 70px;
-  padding-left: 150px;
-  line-height: 1.7em;
-  width: 500px;
-}
-.steam-info h1 {
-  line-height: 1.6em;
-  padding-bottom: 20px;
-}
-.discord img {
-  width: 100%;
-}
-.lxGame {
-  display: flex;
-  align-items: center;
-  width: 750px;
-  line-height: 1.7em;
-  margin: auto;
-}
-.dreamHack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* WHAT THE FACTORY PAGE */
-.wtfPage {
-  padding-top: 80px;
-  background: url(/public/images/wtf-background.jpg) no-repeat center
-    center/cover;
-  background-attachment: fixed;
-  color: var(--primary-color);
-  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-  text-align: center;
-}
-.wtf-showcase img {
-  width: 1151px;
-  height: 480px;
-  padding: 30px 20px;
-}
-
-/* REBOOP PAGE */
-.reboopPage {
-  background: url(/public/images/reboop-background.jpg) no-repeat center
-    center/cover;
-  background-attachment: fixed;
-  position: relative;
-  font-family: reboopFont;
-  color: var(--primary-color);
-  padding-top: 200px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-.reboop-showcase {
-  font-family: reboopFont;
-  height: 350px;
-  color: #ed5829;
-  font-size: 40px;
-  transform: rotate(-10deg);
-}
-
-/* JACK O'MANOR PAGE */
-.jackProject-page {
-  background: url(/public/images/jack-background.jpg) no-repeat center
-    center/cover;
-  background-attachment: fixed;
-  color: var(--primary-color);
-  font-family: halloweenFont;
-  text-align: center;
-  padding-bottom: 30px;
-}
-.jack-showcase {
-  padding: 200px 0 190px 0;
-}
-.jack-showcase h1 {
-  letter-spacing: 0.01em;
-  font-size: 117px;
-  font-weight: lighter;
-}
-.jackProject-page p {
-  width: 500px;
-  line-height: 1.3em;
-  font-size: 32px;
-}
-.section-with3 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 400px;
-  padding-right: 30px;
-}
-.play,
-.mansion {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  padding: 80px 0;
-  height: 280px;
-  width: 1050px;
-}
-.play-info {
-  width: 500px;
-  border-radius: 50px;
-  padding: 20px 0;
-}
-.play h1 {
-  font-size: 68px;
-}
-.play img,
-.mansion img {
-  height: 500px;
-  object-fit: cover;
-}
-
 /* PRESS PAGE */
 .pressPage {
   padding-top: 80px;
@@ -326,7 +374,7 @@
   text-align: center;
 }
 .pressPage img {
-  width: 384px;
+  width: 30%;
 }
 .pressPage img:hover {
   opacity: 0.8;
@@ -343,19 +391,11 @@
 .pressKit-page h2 {
   padding: 20px 0;
 }
-.hs-banner {
-  height: 450px;
-  width: 100%;
-  background: url(/public/images/library_hero_background.png) no-repeat center
-    center/cover;
-}
-.hs-banner img {
-  height: 430px;
-}
 .press-info {
   padding: 20px 250px;
   text-align: justify;
-  line-height: 26px;
+  line-height: 1.7;
+  margin: auto;
 }
 .press-info ul {
   padding-left: 20px;
@@ -382,8 +422,9 @@
 
 /* FOOTER */
 .footerPage {
-  padding: 10px 0;
+  padding: 15px 0;
   color: var(--primary-color);
+  width: 100%;
   text-align: center;
 }
 .footerPage h2 {
@@ -411,7 +452,7 @@
   padding: 0 5px;
 }
 .startUp {
-  width: 50px;
+  width: 4%;
   padding-top: 10px;
 }
 
@@ -419,7 +460,7 @@
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    height: 120px;
+    height: 110px;
     padding: 20px;
   }
   .nav-content a {
@@ -428,6 +469,28 @@
   }
   .nav-content a:hover {
     border-bottom: none;
+  }
+  .page {
+    padding-top: 120px;
+  }
+  h1 {
+    font-size: 47px;
+  }
+  .projects-list {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .projects-list img {
+    height: 100%;
+    width: 50%;
+  }
+  .play h1 {
+    font-size: 32px;
+  }
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
   }
   .contact-img img {
     width: 70%;
