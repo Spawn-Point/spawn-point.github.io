@@ -213,7 +213,7 @@ function HookingSeason() {
             className="leprochaun-img"
             src="/images/Leprochaun2.png"
             alt="Leprochaun2"
-            width={'40%'}
+            width={'38%'}
           />
         </div>
       </section>

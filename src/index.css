@@ -230,7 +230,6 @@
   font-family: reboopFont;
   color: #ed5829;
   font-size: 150px;
-  /* position: absolute; */
   padding: 150px 0;
   transform: rotate(-10deg);
   transform-origin: center center;
@@ -290,6 +289,9 @@
 }
 .play-info h1 {
   font-size: 68px;
+}
+.play-section {
+  margin: -250px 0 -110px 0;
 }
 
 /* PROJECTS INFO AND CONTENT */

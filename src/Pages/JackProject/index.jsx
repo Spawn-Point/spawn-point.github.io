@@ -75,14 +75,14 @@ function JackProject() {
           </p>
         </div>
       </section>
-      <section className="section-content">
+      <section className="mansion-content play-section">
         <div className="play-info bg-dark">
           <h1>Play in browser on Itch.io</h1>
           <Link to="https://spawnpoint.itch.io/jack-omanor" target="_blank">
             <i className="fa-brands fa-itch-io fa-6x"></i>
           </Link>
         </div>
-        <img src="/images/pumpkin.gif" alt="pumpkin" width={'50%'} />
+        <img src="/images/pumpkin.gif" alt="pumpkin" width={'35%'} />
       </section>
     </div>
   );
