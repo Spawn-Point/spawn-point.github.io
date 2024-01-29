@@ -23,21 +23,22 @@ function Navbar() {
   return (
     <div>
       <div className={`navbar bg-dark navbar ${isScrolled ? 'scrolled' : ''}`}>
-        <div className="logo">
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <img src="/images/logo.png" alt="logo" />
-          </Link>
-        </div>
         <div className="nav-content">
           <ul>
+            <li>
+              <div className="logo">
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                  <img src="/images/logo.png" alt="logo" />
+                </Link>
+              </div>
+            </li>
+            <li className='gap'>
+            </li>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/hookingSeason">Current Project</Link>
             </li>
             <li>
               <Link to="/projects">Projects</Link>

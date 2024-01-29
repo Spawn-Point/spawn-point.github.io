@@ -50,7 +50,7 @@ function ReboopProject() {
               reconstruct his disjointed body with the help of other bots.
             </p>
           </div>
-          <img src="/images/GGJAM.png" alt="" width={'35%'} />
+          <img className='ggj' src="/images/GGJAM.png" alt="" width={'35%'} />
         </section>
         <section className="section-content bg-bourdou">
           <img

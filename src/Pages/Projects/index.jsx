@@ -5,8 +5,6 @@ function Projects() {
     <div className="projectsPage bg-dark page">
       <div>
         <h1>Projects</h1>
-        <br />
-        <h3>Press the images to learn more</h3>
       </div>
       <div className="projects-list">
         <Link to="/hookingSeason">

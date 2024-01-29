@@ -23,8 +23,6 @@ function HomePage() {
       <div className="projects">
         <div>
           <h1>Projects</h1>
-          <br />
-          <h4>Press the images to learn more</h4>
         </div>
         <div className="projects-list">
           <Link to="/hookingSeason">

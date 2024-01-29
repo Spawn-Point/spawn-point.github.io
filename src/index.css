@@ -1,14 +1,20 @@
 /* HOME PAGE */
+body {
+  background-color: rgb(0, 0, 0);
+}
 .homePage {
   color: #fff;
   text-align: center;
 }
 .hero img {
-  width: 100%;
-  padding: 170px 0;
+  width: 80%;
+  padding: 30% 0;
+}
+.current-title h1{
+  padding-bottom: 5%;
 }
 .latest-project {
-  margin-bottom: 30px;
+  margin-bottom: 10%;
 }
 .banner-back {
   width: 100%;
@@ -18,23 +24,26 @@
   width: 47%;
   position: absolute;
   z-index: 10;
-  margin-left: 40px;
+  margin-left: 5%;
 }
 .banner-top:hover {
-  width: 48%;
+  width: 52%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6vw;
 }
 
 /* NAVBAR */
 .navbar {
-  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 2%;
   position: fixed;
-  justify-content: space-around;
-  align-items: center;
+  text-align: right;
   width: 100%;
-  height: 64px;
-  top: 0;
   z-index: 50;
-  padding: 10px;
   transition: border-bottom 0.3s ease; /* Add a smooth transition for the border */
 }
 .nav-content ul {
@@ -42,16 +51,22 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  gap: 4%;
+  font-size: 2vw;
+}
+.gap{
+  width: 10vw;
 }
 .nav-content a {
-  padding: 20px;
+  padding: 1%;
 }
 .nav-content a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
 .logo img {
-  width: 62px;
+  width: 4vw;
+
 }
 .logo:hover {
   filter: drop-shadow(5px 5px 1.5em var(--secondary-color));
@@ -59,35 +74,39 @@
 .navbar.scrolled {
   border-bottom: 1px solid #ffffff8a;
 }
+.pageTitle {
+  padding-top: 15%;
+}
 
 /* CONTACTS PAGE */
 .contactsPage {
   color: var(--primary-color);
-  padding: 90px 170px 0 170px;
+  padding: 10% 10% 10% 10%;
   text-align: center;
   width: 100%;
 }
+
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 10%;
   text-align: center;
-  padding: 32px 0;
+  padding: 15% 0;
 }
 .contacts img {
   width: 60%;
-  height: 300px;
+  height: 60%;
   object-fit: cover;
-  margin-bottom: 15px;
-  border-radius: 50%;
+  margin-bottom: 5%;
+  border-radius: 40%;
 }
 .contact-info h3 {
-  padding-bottom: 16px;
+  padding-bottom: 5%;
 }
 
 /* PROJECTS PAGE */
 .projectsPage {
-  padding: 80px 0 20px 0;
+  padding: 18% 0 5% 0;
   color: var(--primary-color);
   text-align: center;
 }
@@ -97,40 +116,47 @@
   color: var(--primary-color);
 }
 .about-content {
-  padding-top: 90px;
-  padding-bottom: 30px;
-  max-width: 65%;
-  text-align: justify;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  width: 55%;
   margin: auto;
   line-height: 1.6;
 }
 .about-content h3 {
-  padding: 20px 0;
+  padding-top: 25%;
+  padding-bottom: 4%;
+  width: 100%;
+  font-size: 200%;
+  text-align: center;
 }
 
 /* HOOKING SEASON PAGE */
 .hooking-season-page {
-  padding-top: 64px;
+  padding-top: 10%;
   font-family: hookingFont;
   color: var(--primary-color);
-  text-align: center;
 }
 .hooking-season-page h1 {
-  font-size: 40px;
-  padding-bottom: 20px;
+  font-size: 120%;
+  padding-bottom: 5%;
 }
 .jack-img {
-  width: 30%;
-  height: 329px;
+  width: 40%;
+  height: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.hook-info{
+  padding-top: 5%;
 }
 .hook-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 10%;
   justify-content: center;
   align-items: center;
   line-height: 1.4;
-  margin-top: 20px;
+  margin-top: 2%;
 }
 .hook-image {
   width: 40%;
@@ -140,16 +166,21 @@
 }
 .hook-section-paragraphs {
   width: 100%;
+  padding: 4% 2% 4% 2%;
 }
 .steam-info {
-  padding-top: 70px;
-  padding-left: 150px;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 5%;
   line-height: 1.7;
   width: 50%;
 }
 .steam-info h1 {
   line-height: 1.6;
-  padding-bottom: 20px;
+  padding-bottom: 10%;
+}
+.steam-info a {
+  margin: 30%;
 }
 .discord img {
   width: 100%;
@@ -157,9 +188,8 @@
 .lxGame {
   display: flex;
   align-items: center;
-  width: 70%;
   line-height: 1.7;
-  margin: auto;
+  margin: 5% 5% 5% 5%;
 }
 .hooking-season-page a:hover {
   opacity: 0.85;
@@ -170,8 +200,8 @@
 
 /* WHAT THE FACTORY PAGE */
 .wtfPage {
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding-top: 10%;
+  padding-bottom: 10%;
   background: url(/public/images/wtf-background.jpg) no-repeat center
     center/cover;
   background-attachment: fixed;
@@ -182,24 +212,21 @@
 .wtf-showcase img {
   width: 90%;
   height: auto;
-  padding: 30px;
+  padding: 5%;
 }
 .constructorMan {
-  height: 450px;
-  width: 397px;
+  width: 40%;
+  margin-left: 10%;
 }
 .factory-sheet {
   width: 30%;
-  height: 440px;
-  margin: 10px 0;
-}
-.factory-text p {
-  font-size: 24px;
+  margin: 5% 5%;
 }
 .section-with3 {
   display: flex;
-  justify-content: center;
-  height: 400px;
+  align-items: center;
+  margin: 2% 2% 2% 2%;
+  gap: 2%;
 }
 .machines-title {
   display: flex;
@@ -234,6 +261,9 @@
   transform: rotate(-10deg);
   transform-origin: center center;
 }
+.ggj{
+  margin-left: 10%;
+}
 .reboop-page a:hover {
   opacity: 0.85;
 }
@@ -248,7 +278,7 @@
   text-align: center;
 }
 .jack-showcase {
-  padding: 200px 0 190px 0;
+  padding: 25% 0 20% 0;
 }
 .jack-showcase h1 {
   letter-spacing: 0.01em;
@@ -276,11 +306,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 -200px 0 -250px;
+  margin: 0 -20% 0 -20%;
 }
 .mansion-content p {
-  padding: 0 20px;
-  margin-top: -50px;
+  padding: 0 5%;
+  margin-top: 5%;
 }
 .play-info {
   width: 38%;
@@ -288,37 +318,37 @@
   padding: 20px;
 }
 .play-info h1 {
-  font-size: 68px;
+  font-size: 300%;
 }
 .play-section {
-  margin: -250px 0 -110px 0;
+  margin: 10% 0 10% 0;
 }
 
 /* PROJECTS INFO AND CONTENT */
 .section-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
-  padding: 20px 60px;
+  gap: 4%;
+  padding: 1% 3% 3% 3%;
 }
 .section-info {
   border-radius: 50px;
   width: 45%;
   padding: 20px;
-  line-height: 1.9;
+  line-height: 1.7;
 }
 .section-info p {
   padding-top: 20px;
 }
 .projects-list {
-  padding: 20px;
+  padding: 0% 10% 0% 10%;
+  margin: 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .projects-list img {
-  height: 100%;
-  width: 92%;
+  height: 80%;
+  width: 80%;
 }
 .projects-list img:hover {
   opacity: 0.87;
@@ -326,23 +356,22 @@
   transform: translateY(-10px);
 }
 .hs-banner {
-  width: 100%;
   background: url(/public/images/library_hero_background.png) no-repeat center
     center/cover;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 40px;
 }
 .hooking-season-showcase img {
-  height: 430px;
-  margin: 20px;
+  height: 100%;
+  width: 100%;
+  margin: 10%;
 }
 .carousel {
   display: flex;
   height: 250px;
-  gap: 10px;
+  gap: 4%;
   overflow-x: scroll;
   padding: 15px 0;
 }
@@ -370,22 +399,26 @@
 
 /* PRESS PAGE */
 .pressPage {
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding-top: 25%;
+  padding-bottom: 30%;
   color: var(--primary-color);
   text-align: center;
+  font-size: 1vw;
 }
 .pressPage img {
+  padding-top: 4%;
   width: 30%;
+  min-width: 250px;
 }
 .pressPage img:hover {
-  opacity: 0.8;
+  opacity: 0.87;
   filter: drop-shadow(5px 5px 1.5em var(--secondary-color));
+  transform: translateY(-10px);
 }
 
 /* HOOKING SEASON PRESS KITS PAGE */
 .pressKit-page {
-  padding-top: 60px;
+  padding-top: 10%;
   padding-bottom: 30px;
   color: var(--primary-color);
   text-align: center;
@@ -456,45 +489,4 @@
 .startUp {
   width: 4%;
   padding-top: 10px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    height: 110px;
-    padding: 20px;
-  }
-  .nav-content a {
-    padding: 10px;
-    font-size: smaller;
-  }
-  .nav-content a:hover {
-    border-bottom: none;
-  }
-  .page {
-    padding-top: 120px;
-  }
-  h1 {
-    font-size: 47px;
-  }
-  .projects-list {
-    padding: 30px 0;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .projects-list img {
-    height: 100%;
-    width: 50%;
-  }
-  .play h1 {
-    font-size: 32px;
-  }
-  .contacts {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .contact-img img {
-    width: 70%;
-  }
 }

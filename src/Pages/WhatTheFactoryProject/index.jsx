@@ -63,7 +63,7 @@ function WhatTheFactoryProject() {
         </div>
       </section>
       <section className="section-with3">
-        <img src="/images/Pit.png" alt="" width={'500px'} />
+        <img src="/images/Pit.png" alt="" width={'25%'} height={'25%'}/>
         <div className="section-info factory-text">
           <div className="machines-title">
             <img src="/images/Blood_Splat.png" alt="" />

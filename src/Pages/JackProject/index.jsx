@@ -50,7 +50,7 @@ function JackProject() {
           <img className="jack-img" src="/images/jack.png" alt="jack" />
         </section>
         <section className="monsters-content bg-dark">
-          <img src="/images/Sword_Knight_Walk.gif" alt="" width={'40%'} />
+          <img src="/images/Sword_Knight_Walk.gif" alt="" width={'30%'} />
           <div className="monsters-info">
             <h1>Monsters</h1>
             <p>
@@ -60,7 +60,7 @@ function JackProject() {
               mean there were already skeletons in the house? Guys?
             </p>
           </div>
-          <img src="/images/BenchWalkLeftt.gif" alt="" width={'28%px'} />
+          <img src="/images/BenchWalkLeftt.gif" alt="" width={'25%'} />
         </section>
       </div>
       <section className="mansion">

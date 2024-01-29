@@ -128,7 +128,7 @@ function HookingSeason() {
       </section>
       <section className="section-content bg-dark">
         <div>
-          <img src="/images/Chars.png" alt="chars" width={'500px'} />
+          <img src="/images/Chars.png" alt="chars" width={'300px'} />
         </div>
         <div className="section-info">
           <h1>Roster</h1>
@@ -140,7 +140,7 @@ function HookingSeason() {
         </div>
       </section>
       <section className="hs-banner">
-        <div>
+        <div className='hook-info'>
           <h1>Hook</h1>
           <div className="hook-section">
             <img

@@ -1,7 +1,7 @@
 function Contacts() {
   return (
     <div className="contactsPage bg-dark page">
-      <h1>Meet the Team</h1>
+      <h1 className="pageTitle">Meet the Team</h1>
       <br />
       <div className="contacts">
         <div>
@@ -37,15 +37,6 @@ function Contacts() {
             <div className="contact-info">
               <h3>João Pombo</h3>
               <p>Art Director</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <img src="/images/Mel.png" alt="Mel" />
-          <div>
-            <div className="contact-info">
-              <h3>Rafael Nascimento</h3>
-              <p>Programmer</p>
             </div>
           </div>
         </div>
