@@ -6,4 +6,13 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# spawn-point
+
+
+# Guide to release using Github Pages:
+
+Merge your changes to main, through a different branch, after testing them.
+Then, run this command:
+
+- npm run deploy
+
+This will push the /dist folder to the gh-pages branch.
