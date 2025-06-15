@@ -11,8 +11,9 @@ Currently, two official plugins are available:
 # Guide to release using Github Pages:
 
 Merge your changes to main, through a different branch, after testing them.
-Then, run this command:
+Then, run these commands:
 
+- npm run predeploy
 - npm run deploy
 
 This will push the /dist folder to the gh-pages branch.
