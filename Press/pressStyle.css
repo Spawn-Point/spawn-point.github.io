@@ -1,0 +1,20 @@
+.selectable > a:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 0.1rem;
+  margin-right: 1rem;
+}
+
+h6{
+  font-size: 16px;
+}
+
+p{
+  font-size: 14px;
+}
+
+/*Small Screens*/
+@media (max-width: 575.98px) {
+  .sideBar {
+    display: none;
+  }
+}

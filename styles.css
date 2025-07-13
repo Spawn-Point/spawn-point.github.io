@@ -1,0 +1,55 @@
+.featured{
+	padding-top: 30px;
+	padding-bottom: 40px;
+	color: white;
+	justify-content: center;
+}
+
+.featured-title{
+	margin-bottom: 40px;
+	background-color: rgba(0, 0, 0, 0.2);
+ 	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectDisplay .card {
+  width: 18rem;
+  color: black;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 12px;
+  box-shadow: 0px 5px 5px black;
+}
+
+@media (max-width: 1200px) {
+  .projectDisplay .card {
+    width: 100%;
+  }
+}
+
+/* Button adapts width and goes below if needed */
+#button {
+  flex: 1 1 60%;             /* Responsive width */
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Image fills height while preserving aspect ratio */
+.projectDisplay .img-fluid {
+  height: auto;
+  width: 100%;
+  max-height: 40vh;          /* Max height limit */
+  object-fit: contain;       /* Maintain aspect ratio */
+}
+
+.projectDisplay .cardFooter{
+	position: absolute;
+	bottom: 5%; 
+	right: 5%;
+}

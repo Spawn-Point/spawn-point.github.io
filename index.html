@@ -1,20 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spawn Point</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="all-styles.css">
+    
+    <title>Spawn Point Studios</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #121314;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Imagens/Logos/logo.png" width="50" height="50" alt="">
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: white;"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav text-right">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                Games
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:black">
+                <a class="dropdown-item" href="HookingSeason.html" style="color: white;">Hooking Season</a>
+                <a class="dropdown-item" href="Revelation.html" style="color: white;">Project Revelation</a>
+                <a class="dropdown-item" href="WTF.html" style="color: white;">What The Factory</a>
+                <a class="dropdown-item" href="Jack.html" style="color: white;">Jack O'Manor</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#about us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Press/Press.html">Press</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#Contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="header">
+      <img src="Imagens/Logos/SpawnPoint-Banner.png" class="img-fluid" alt="logo">
+      <div class="bottom-right floating-text" style="color: white; font-family: Pixel; font-size: 25px;">Scroll Down For More</div>
+    </div>
+
+    <div class="featured fade-in-section justify-content-center">
+      <div class="featured-title text-center">
+        <h1 class="d-flex">Featured Projects</h1>
+      </div>
+
+      <!--Project Display-->
+      <div class="projectDisplay" style="background-image: url(Imagens/HS/Background.png);">
+        <!--Card -->
+          <div class="card" style="background-color:#FFFFF0">
+            <div class="card-body">
+              <h5 class="card-title">Hooking Season</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Twin-stick Party Game</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class = "cardFooter">
+                <a href="HookingSeason.html" class="card-link">MORE</a>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+
+          <a href="HookingSeason.html" type="button" id = "button" class="btn btn-primary">
+            <img src="Imagens/HS/Logos/Logo.png" class="img-fluid" alt="logo">
+          </a>
+      </div>
+      <!--Project Display-->
+
+      <!--Project Display-->
+      <div class="projectDisplay" style="background-image: url(Imagens/Revelation/Background.png);">
+          <button type="button" id = "button" class="btn btn-primary">
+            <img src="Imagens/Revelation/Logo/Logo.svg" class="img-fluid" alt="logo">
+          </button>
+        <!--Card -->
+          <div class="card" style="background-color:#FFFFF0">
+            <div class="card-body">
+              <h5 class="card-title">Project Revelation</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Roguelike tacical RPG with Dinamic Progression</h6>
+              <p class="card-text">Strategize around different objectives, maps and enemy types in order to succeed. Collect a variety of different ability granting equipment through each successful run. Build up characters’ individual kits for any possible combat approach.</p>
+              <div class = "cardFooter">
+                <a href="#" class="card-link">SOON</a>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+      </div>
+      <!--Project Display-->
+
+      <!--Project Display-->
+      <div class="projectDisplay" style="background-image: url(Imagens/Jack/Background_3.svg);">
+        <!--Card -->
+          <div class="card" style="background-color:#FFFFF0">
+            <div class="card-body">
+              <h5 class="card-title">Jack'O Manor</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Twin-stick Party Game</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class = "cardFooter">
+                <a href="Jack.html" class="card-link">MORE</a>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+
+          <button type="button" id = "button" class="btn btn-primary">
+            <img src="Imagens/Jack/Logo.png" class="img-fluid" alt="logo">
+          </button>
+      </div>
+      <!--Project Display-->
+
+      <!--Project Display-->
+      <div class="projectDisplay" style="background-image: url(Imagens/WTF/Background.jpg);">
+          <button type="button" id = "button" class="btn btn-primary">
+            <img src="Imagens/WTF/Logo.svg" class="img-fluid" alt="logo" style="border-radius: 15px;">
+          </button>
+        <!--Card -->
+          <div class="card" style="background-color:#FFFFF0">
+            <div class="card-body">
+              <h5 class="card-title">What the Factory</h5>
+              <h6 class="card-subtitle mb-2">Twin-stick Party Game</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class = "cardFooter">
+                <a href="WTF.html" class="card-link">MORE</a>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+      </div>
+      <!--Project Display-->
+    </div>
+
+      <footer class="text-center text-lg-start text-white" style="background-color: #121314">
+        <!-- Grid container -->
+        <div id="about us" class="container p-4 pb-0" style="width:100%">
+          <div class="row">
+            <!-- Left side: Title and text -->
+            <div class="col-md-6 text-md-start mb-4 mb-md-0">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Spawn Point lda.</h6>
+              <p>
+                Spawn Point is a small team of indie developers passionate about the game industry. We’ve worked across the full lifecycle
+                of games—from concept to post-launch support. Our curiosity and skills drive us to keep learning and contributing to the
+                world of games.
+              </p>
+            </div>
+
+            <!-- Right side: Email and Social Media -->
+            <div class="col-md-6 text-md-end">
+              <!-- Email -->
+              <div class="mb-3">
+                <a class="text-white" href="mailto:info@spawnpoint.pt">info@spawnpoint.pt</a>
+              </div>
+
+              <!-- Social Media Icons -->
+              <div id="Contacts" class="col">
+                <div class="row d-flex justify-content-center">
+                  <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://twitter.com/SpawnPoint9000" target="null">
+                    <img src="Imagens/Icons/Social Media/x-2.svg" style="width: 20px; height: 20px;">
+                  </a>
+                  <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://www.instagram.com/spawnpoint9000/" target="null">
+                    <img src="Imagens/Icons/Social Media/instagram-2016-5.svg" style="width: 20px; height: 20px;">
+                  </a>
+                  <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://www.tiktok.com/@spawnpoint9000" target="null">
+                    <img src="Imagens/Icons/Social Media/tiktok-logo-2-3.svg" style="width: 20px; height: 20px;">
+                  </a>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://bsky.app/profile/spawnpointstudios.bsky.social" target="null">
+                    <img src="Imagens/Icons/Social Media/bluesky-1.svg" style="width: 20px; height: 20px;">
+                  </a>
+                  <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://discord.gg/u6cpGv3w" target="null">
+                    <img src="Imagens/Icons/Social Media/discord-6.svg" style="width: 20px; height: 20px;">
+                  </a>
+                  <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://www.youtube.com/@SpawnPoint9000" target="null">
+                    <img src="Imagens/Icons/Social Media/youtube-icon-5.svg" style="width: 20px; height: 20px;">
+                  </a>
+                  <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://spawnpoint.itch.io/" target="null">
+                    <img src="Imagens/Icons/Social Media/itchio.svg" style="width: 20px; height: 20px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Grid container -->
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
   </body>
 </html>
