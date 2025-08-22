@@ -16,13 +16,13 @@ jobs:
         - name: Check website is up  
           id: health
           run: |
-            URL="https://yourusername.github.io/your-repo/"
+            URL="https://spawnpoint.pt"
             STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$URL")
             echo "status=$STATUS" >> $GITHUB_OUTPUT
         - name: Send Discord alert if down
           if: steps.health.outputs.status != '200'
           run: |
-            PAYLOAD='{"content":"@everyone Our website is down! Status code: '${{ steps.health.outputs.status }}'"}'
+            PAYLOAD='{"content":"@Devs Our website is down! Status code: '${{ steps.health.outputs.status }}'"}'
             curl -H "Content-Type: application/json" \
                -d "$PAYLOAD" \
                ${{ secrets.DISCORD_WEBHOOK }}
