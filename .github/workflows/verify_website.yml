@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
   pull_request:
     types: [opened, synchronize]
-  #schedule:
-  #  - cron: "0 0 * * *"
+  schedule:
+    - cron: "0 0 * * *"
   
 
 jobs:
@@ -19,16 +19,10 @@ jobs:
             URL="https://yourusername.github.io/your-repo/"
             STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$URL")
             echo "status=$STATUS" >> $GITHUB_OUTPUT
-        #- name: Send Discord alert if down
-        #  if: steps.health.outputs.status != '200'
-        #  run: |
-        #    PAYLOAD='{"content":"Our website is down! Status code: '${{ steps.health.outputs.status }}'"}'
-        #    curl -H "Content-Type: application/json" \
-        #       -d "$PAYLOAD" \
-        #       ${{ secrets.DISCORD_WEBHOOK }}
         - name: Send Discord alert if down
+          if: steps.health.outputs.status != '200'
           run: |
-            PAYLOAD='{"content":"Do not mind me, I am just a test!"}'
+            PAYLOAD='{"content":"@everyone Our website is down! Status code: '${{ steps.health.outputs.status }}'"}'
             curl -H "Content-Type: application/json" \
                -d "$PAYLOAD" \
                ${{ secrets.DISCORD_WEBHOOK }}
