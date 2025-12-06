@@ -15,33 +15,30 @@
     <link rel="icon" href="Imagens\Logos\logo.ico">
 </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #121314; box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4)">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="Imagens/Logos/logo_1.png" width="50" height="50" alt="Spawn Point Icon">
         </a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="color: white;"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav text-right">
             <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Games
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:black">
-                <a class="dropdown-item" href="HookingSeason.html" style="color: white;">Hooking Season</a>
-                <a class="dropdown-item" href="Revelation.html" style="color: white;">Project Revelation</a>
-                <a class="dropdown-item" href="Jack.html" style="color: white;">Jack O'Manor</a>
-                <a class="dropdown-item" href="WTF.html" style="color: white;">What The Factory</a>
+              <div class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="HookingSeason.html">Hooking Season</a>
+                <a class="dropdown-item" href="Revelation.html">Project Revelation</a>
+                <a class="dropdown-item" href="Jack.html">Jack O'Manor</a>
+                <a class="dropdown-item" href="WTF.html">What The Factory</a>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#about us">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Press/Press_WTF.html">Press</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#Contacts">Contacts</a>
@@ -52,46 +49,46 @@
     </nav>
 
     <main>
-      <div class="header" style="background-image: url(Imagens/WTF/wtf_background.jpg); background-size: cover; background-position: center;">
-        <img src="Imagens/WTF/wtf_logo.svg" class="headerImage" alt="logo" style="max-width: 80vw; height: auto;">
-        <div class="bottom-right floating-text" style="color: white; font-family: Pixel; font-size: 25px;">Scroll Down For More</div>
+      <div class="header custom-header" style="background-image: url(Imagens/WTF/wtf_background.jpg); background-size: cover; background-position: center;">
+  <img src="Imagens/WTF/wtf_logo.svg" class="headerImage" alt="logo">
+  <div class="bottom-right floating-text scroll-hint">Scroll Down For More</div>
       </div>
 
-      <div class="mx-4 contentHolder" style="background-color: #121314;">
+  <div class="mx-4 contentHolder content-section custom-content-section">
         <!-- Content -->
         <div class="d-flex text-wrap text-break">
           <div class="row fade-in-section justify-content-start align-items-center noBackgroundContent">
-            <div class="col align-top" style="color:white; object-fit: contain;">
-              <h2 style="font-family: Factory;">The Game</h2>
-              <h5>
-                  WHÅT THE FÅCTÖRY is here to prove that chaos has charm,<br>
-                  and trial your ability to manage hazards! In this game,<br>
-                  you’re put in the shoes of a recently hired factory overseer,<br>
-                  tasked with making sure each shift ends with maximum profit.<br>
-                  Made in the Unity Engine, this fast paced strategy<br>
+            <div class="col-12 col-md-6 align-top text-center custom-text">
+              <h2 class="content-heading" style="font-family: Factory;">The Game</h2>
+              <h5 class="content-text">
+                  WHÅT THE FÅCTÖRY is here to prove that chaos has charm,
+                  and trial your ability to manage hazards! In this game,
+                  you’re put in the shoes of a recently hired factory overseer,
+                  tasked with making sure each shift ends with maximum profit.
+                  Made in the Unity Engine, this fast paced strategy
                   and resource management experience will have you clear the way for productivity.
                   From putting out fires, to fixing machines and nudging your distractible task force out of harm’s way.
               </h5>
             </div>
-            <div class="col">
-              <img src="Imagens/WTF/Gallery/screenshot_2.png" style="max-width: 80vh;" class="img-fluid" alt="Page">
+            <div class="col-12 col-md-6 text-center">
+              <img src="Imagens/WTF/Gallery/screenshot_2.png" class="img-fluid hero-img custom-img" alt="Page">
             </div>
           </div>
         </div>
 
         <!-- Content Card-->
-        <div class="fade-in-section contentCard text-wrap text-break" style="background-image: url(Imagens/WTF/wtf_background.jpg);">
+        <div class="fade-in-section contentCard text-wrap text-break custom-content-card" style="background-image: url(Imagens/WTF/wtf_background.jpg);">
           <div class="container">
             <!-- Content -->
           <div class="row justify-content-center align-items-center">
-            <div class="col-md-6 px-5 mt-1" style="color:white; text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);">
+            <div class="col-md-6 px-5 mt-1 text-center custom-text">
               <h2 style="font-family: Factory;">Worker AI</h2>
-              <h5 style="font-size: 1.5rem;">
+              <h5 class="content-text">
                   The player manages a factory populated by Worker AI that roams around the level completing tasks and getting themselves in dangerous and maybe deadly situations.
               </h5>
             </div>
             <div class="col-md-6 align-items-end">
-              <img src="Imagens/WTF/wtf_worker_held.gif" style="max-height: 60vh;" class="img-fluid" alt="Worker being held animation">
+              <img src="Imagens/WTF/wtf_worker_held.gif" class="img-fluid hero-img" alt="Worker being held animation">
             </div>
           </div>
           </div>
@@ -101,12 +98,10 @@
         <!-- Content -->
         <div class="d-flex d-flex justify-content-center my-5 text-wrap text-break">
           <div class="row fade-in-section d-flex justify-content-end align-items-center noBackgroundContent">
-            <div class="col-5 d-flex justify-content-end">
-              <img src="Imagens/WTF/blood_splatter.svg" style="max-width: 40%; filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 1))" alt="blood Splat">
-            </div>
-            <div class="col-7" style="color:white;">
-              <h2 style="font-family: Factory; font-size: 2.5rem;">Deaths</h2>
-              <h5 style="font-size: 1.5rem;">
+            <div class="col-12 text-center" style="color:white;">
+              <img src="Imagens/WTF/blood_splatter.svg" class="img-fluid" alt="blood Splat">
+              <h2 class="content-heading mt-3" style="font-family: Factory;">Deaths</h2>
+              <h5 class="content-text">
                 The death of workers will cost precious time.<br>
                 Worker-Machine interactions generate money,<br>
                 so the more workers alive at any point the faster the player can rank up their score.
@@ -120,14 +115,12 @@
           <div class="container">
             <!-- Content -->
             <div class="row flex-column flex-md-row justify-content-center align-items-center">
-              <div class="col-12 col-md-6 px-5 mt-1 justify-content-end" style="color:white; text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);">
-                <h2 style="font-family: Factory; font-size: 2.5rem;">Levels</h2>
-                <h5 style="font-size: 1.5rem;">
+              <div class="col-12 text-center" style="color:white; text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);">
+                <h2 class="content-heading" style="font-family: Factory;">Levels</h2>
+                <h5 class="content-text">
                     Three differently themed levels full of machines, each with a unique interaction for player and workers alike. Machine malfunction is common and may lead to the loss of workers..
                 </h5>
-              </div>
-              <div class="col-12 col-md-6 justify-content-start">
-                <img src="Imagens/WTF/wtf_stuffing_machine.png" style="max-height: 60vh; filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 1))" class="img-fluid" alt="Stuffing Machine">
+                <img src="Imagens/WTF/wtf_stuffing_machine.png" class="img-fluid hero-img mt-3" style="filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 1))" alt="Stuffing Machine">
               </div>
             </div>
           </div>
@@ -138,7 +131,7 @@
         <div class="d-flex justify-content-center my-5 text-wrap text-break">
           <div class="row fade-in-section align-items-center noBackgroundContent">
             <div class="col d-flex justify-content-end">
-              <img src="Imagens/WTF/wtf_warning_yellow.png" style="max-height: 30vh; box-shadow: 0px 10px 15px rgba(0, 0, 0, 1)" alt="Warning Icon">
+              <img src="Imagens/WTF/wtf_warning_yellow.png" class="img-fluid" alt="Warning Icon">
             </div>
             <div class="col d-flex justify-content-start" style="color:white;">
               <h2>Currently On Hold</h2>
