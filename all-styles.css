@@ -1,7 +1,8 @@
-body{
-  background-color: black;
-  background-image: url(Imagens/Icons/FlagIcon_2.png);
+html, body{
+  max-width: 100%;
+  background-color: rgb(19, 18, 18);
   background-size: 200px 200px;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -62,10 +63,6 @@ body{
     scale: 0.95;
     rotate: -2deg;
   }
-}
-
-.img-fluid:hover{
-  animation: swell 3s ease-in-out infinite;
 }
 
 .floating-text {
@@ -134,3 +131,375 @@ background-position: margin-top;
 background-repeat: no-repeat;
 margin-top: 30px;
 }
+
+/* Ensure content isn't hidden under the fixed navbar */
+body {
+  padding-top: 70px; /* matches navbar height; adjust if navbar height changes */
+}
+
+/* Responsive adjustments for project cards, headers and images */
+.projectDisplay img,
+.projectDisplay .card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.projectDisplay .card {
+  margin: 8px;
+  min-width: 220px;
+}
+
+.projectDisplay > a.btn {
+  align-self: center;
+  margin: 8px;
+  min-width: 300px;
+  min-height: 200px;
+}
+
+/* Medium screens: make project display wider and stack content more naturally */
+@media (max-width: 991.98px) {
+  .projectDisplay {
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .projectDisplay .card {
+    flex: 0 0 60%;
+    max-width: 540px;
+  }
+
+  .projectDisplay > a.btn {
+    margin-top: 12px;
+  }
+}
+
+/* Small screens / phones: stack vertically, full width cards and larger tap targets */
+@media (max-width: 575.98px) {
+  .header {
+    max-height: 45vh;
+    padding: 0 0.5rem;
+  }
+
+  .header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .projectDisplay {
+    width: 95%;
+    margin-top: 18px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 330px;
+  }
+
+  .projectDisplay .card {
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 0 0;
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.45);
+  }
+
+  .projectDisplay > a.btn {
+    width: 120px;
+    display: block;
+    padding: 0.25rem;
+    text-align: center;
+  }
+
+  .card-title { font-size: 1.1rem; }
+  .card-text { font-size: 0.95rem; }
+
+  .bottom-right {
+    font-size: 13px;
+    bottom: 2%;
+    right: 2%;
+  }
+
+  /* Make footer/social buttons easier to tap */
+  footer .btn {
+    padding: 0.5rem 0.6rem;
+    margin: 4px;
+  }
+}
+
+/* Utility: make images and iframes responsive across the site */
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Strong overrides to tame inline styles and improve mobile scaling */
+.headerImage {
+  display: block;
+  margin: 0 auto;
+  max-width: 60% !important; /* default for desktop */
+  height: auto !important;   /* override inline height values */
+  filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.9));
+}
+
+/* Media and gallery images */
+.videoDisplay {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.gallery-img, #overlay-img {
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+/* Normalize headings inside content areas. Use !important to override inline font-size styles for responsiveness. */
+.contentHolder h1, .contentHolder h2, .contentCard h1, .contentCard h2, .featured h1, .featured h2 {
+  font-size: 2.2rem !important;
+  line-height: 1.1 !important;
+}
+
+.contentHolder h4, .contentCard h4, .contentHolder h5, .contentCard h5 {
+  font-size: 1rem !important;
+}
+
+@media (max-width: 991.98px) {
+  .headerImage { max-width: 65% !important; }
+  .contentHolder h1, .contentHolder h2, .contentCard h1, .contentCard h2 { font-size: 1.8rem !important; }
+  .contentHolder h4, .contentCard h4, .contentHolder h5, .contentCard h5 { font-size: 0.95rem !important; }
+}
+
+@media (max-width: 575.98px) {
+  .headerImage { max-width: 90% !important; }
+  .contentHolder h1, .contentHolder h2, .contentCard h1, .contentCard h2 { font-size: 1.4rem !important; }
+  .contentHolder h4, .contentCard h4, .contentHolder h5, .contentCard h5 { font-size: 0.95rem !important; }
+
+  /* Reduce large media heights used in desktop view to avoid overflow on phones */
+  img[style*="height: 50vh"], img[style*="max-height: 60vh"], img[style*="height: 40vh"], img[style*="height: 20vh"] {
+    height: auto !important;
+    max-height: 45vh !important;
+  }
+
+  /* Make fullscreen overlay image scale nicely */
+  #overlay-img { width: 100% !important; max-height: 80vh !important; }
+
+  /* Tighten paddings on small screens */
+  .container, .container-fluid, .mx-4 { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
+}
+
+/* Footer social icons: slightly larger on phones for easier tapping */
+@media (max-width: 575.98px) {
+  footer .btn img { width: 26px !important; height: 26px !important; }
+}
+
+/* Hero images used in content areas: control their relative height by breakpoint */
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+@media (max-width: 991.98px) {
+  .hero-img { max-height: 50vh; }
+}
+
+@media (max-width: 575.98px) {
+  .hero-img { max-height: 40vh; }
+}
+
+/* Scroll hint in header */
+.scroll-hint {
+  color: white;
+  font-family: Pixel, sans-serif;
+  font-size: 25px;
+}
+
+.content-heading {
+  font-family: Spooky, Fancy, Pixel, sans-serif;
+  font-size: 2.2rem;
+}
+
+@media (max-width: 991.98px) {
+  .content-heading { font-size: 1.8rem; }
+}
+
+@media (max-width: 575.98px) {
+  .scroll-hint { font-size: 16px; }
+  .content-heading { font-size: 1.4rem; }
+}
+
+/* Paragraph/subheading sizing for content areas */
+.content-text {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .content-text { font-size: 1.05rem; }
+}
+
+@media (min-width: 992px) {
+  .content-text { font-size: 1.15rem; }
+}
+
+/* Global spacing / rhythm improvements */
+main {
+  padding-bottom: 3rem;
+}
+
+.content-section {
+  padding: 3rem 0;
+}
+
+/* Reduce vertical space on small screens, increase on desktop */
+@media (max-width: 575.98px) {
+  .content-section { padding: 1.5rem 0; }
+  .content-text { line-height: 1.45; }
+  .mx-4 { margin-left: 0.4rem !important; margin-right: 0.4rem !important; }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .content-section { padding: 2rem 0; }
+  .content-text { line-height: 1.55; }
+}
+
+@media (min-width: 992px) {
+  .content-section { padding: 3rem 0; }
+  .content-text { line-height: 1.7; }
+}
+
+/* Card and featured spacing */
+.contentCard, .bigContentCard, .featured {
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem; /* more relaxed top margin */
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  .contentCard, .bigContentCard, .featured { padding: 3rem; margin-top: 2.5rem; margin-bottom: 2.5rem; }
+}
+
+/* Reduce large Bootstrap utility margins inside content sections */
+.content-section .my-5 { margin-top: 1.5rem !important; margin-bottom: 1.5rem !important; }
+
+@media (max-width: 575.98px) {
+  .content-section .my-5 { margin-top: 1rem !important; margin-bottom: 1rem !important; }
+}
+
+/* Tighten top header for small screens */
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .header { height: 85vh; }
+}
+
+/* Small tweaks for navbar spacing */
+.navbar .navbar-brand img { max-height: 42px;}
+.navbar-nav .nav-link { padding: 0.6rem 0.75rem; }
+
+/* Page specific: Jack page centering tweaks */
+.jack-page .content-heading,
+.jack-page .content-text {
+  text-align: center;
+}
+
+/* If you want headings left-aligned on medium+ screens but centered on phones: */
+@media (min-width: 768px) {
+  .jack-page .content-heading,
+  .jack-page .content-text {
+    text-align: left;
+  }
+}
+
+/* Improve spacing for social icon rows */
+#Contacts .row { gap: 6px; }
+
+/* Add consistent top spacing for stacked `.col-12.col-md-6` blocks on small screens
+   and remove it for md+ where columns sit side-by-side. */
+.col-12.col-md-6 {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .col-12.col-md-6 {
+    margin-top: 0;
+  }
+}
+
+/* Small top spacing above the footer to separate it from content */
+footer {
+  padding-top: 1.6rem; /* default gap */
+}
+
+@media (max-width: 575.98px) {
+  footer {
+    padding-top: 1rem; /* slightly smaller gap on phones */
+  }
+}
+
+/* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Adjust fixed widths for responsiveness */
+.container, .container-fluid {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Ensure all images fit within the viewport */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust margins for mx-4 to prevent overflow */
+.mx-4 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Custom styles for WTF.html */
+.custom-navbar {
+  background-color: #121314;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.custom-dropdown {
+  background-color: black;
+}
+
+.custom-header {
+  background-image: url(Imagens/WTF/wtf_background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-content-section {
+  background-color: #121314;
+}
+
+.custom-text {
+  color: white;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.custom-img {
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 1));
+}
+
+/* Define img-fluid for responsive images */
+.img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
