@@ -39,6 +39,17 @@
   align-items: center;
 }
 
+#button-black {
+  flex: 1 1 60%;
+  background-color: black;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
 /* Image fills height while preserving aspect ratio */
 .projectDisplay .img-fluid {
   height: auto;
