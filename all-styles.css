@@ -502,4 +502,10 @@ img {
   height: auto;
 }
 
+.img-title {
+    display: block;
+    max-width: 70%;
+    height: auto;
+}
+
 
