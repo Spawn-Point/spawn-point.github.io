@@ -390,10 +390,6 @@ main {
   padding-bottom: 1rem;
 }
 
-@media (min-width: 992px) {
-  .header { height: 85vh; }
-}
-
 /* Small tweaks for navbar spacing */
 .navbar .navbar-brand img { max-height: 42px;}
 .navbar-nav .nav-link { padding: 0.6rem 0.75rem; }
