@@ -398,20 +398,6 @@ main {
 .navbar .navbar-brand img { max-height: 42px;}
 .navbar-nav .nav-link { padding: 0.6rem 0.75rem; }
 
-/* Page specific: Jack page centering tweaks */
-.jack-page .content-heading,
-.jack-page .content-text {
-  text-align: center;
-}
-
-/* If you want headings left-aligned on medium+ screens but centered on phones: */
-@media (min-width: 768px) {
-  .jack-page .content-heading,
-  .jack-page .content-text {
-    text-align: left;
-  }
-}
-
 /* Improve spacing for social icon rows */
 #Contacts .row { gap: 6px; }
 
